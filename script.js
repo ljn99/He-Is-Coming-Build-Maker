@@ -299,7 +299,7 @@ function renderItemGrid() {
 
 function passesFilters(item, rarityFilters, tagFilters) {
     const rarityOk = rarityFilters.length === 0 || rarityFilters.includes(item.rarity);
-    const tagOk = tagFilters.length === 0 || item.tags.some(tag => tagFilters.includes(tag));
+    const tagOk = tagFilters.length === 0 || tagFilters.every(tag => item.tags.includes(tag));
     return rarityOk && tagOk;
 }
 

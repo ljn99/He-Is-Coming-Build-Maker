@@ -38,7 +38,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r36c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -62,7 +62,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r34c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -87,7 +87,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r04c09",
+    "image": "Spritesheet_Items_r04c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -136,7 +136,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r12c03",
+    "image": "Spritesheet_Items_r12c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -161,7 +161,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r29c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -208,7 +208,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r28c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -236,7 +236,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r18c01",
+    "image": "Spritesheet_Items_r18c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -261,7 +261,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r23c05",
+    "image": "Spritesheet_Items_r23c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -310,7 +310,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r60c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -382,7 +382,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r33c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -431,7 +431,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r17c11",
+    "image": "Spritesheet_Items_r17c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -480,7 +480,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r42c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -505,7 +505,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r60c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -528,7 +528,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r17c08",
+    "image": "Spritesheet_Items_r17c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -554,7 +554,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r33c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -580,7 +580,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r36c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -606,7 +606,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r23c11",
+    "image": "Spritesheet_Items_r23c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -656,7 +656,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r23c07",
+    "image": "Spritesheet_Items_r23c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -680,7 +680,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r23c09",
+    "image": "Spritesheet_Items_r23c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -706,7 +706,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r33c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -731,7 +731,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r23c08",
+    "image": "Spritesheet_Items_r23c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -756,7 +756,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r12c05",
+    "image": "Spritesheet_Items_r12c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -781,7 +781,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r34c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -829,7 +829,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r23c10",
+    "image": "Spritesheet_Items_r23c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -853,7 +853,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r35c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -878,7 +878,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r32c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -902,7 +902,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r25c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -927,7 +927,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r25c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -952,7 +952,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r28c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1046,7 +1046,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r35c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1070,7 +1070,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r25c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1093,7 +1093,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r33c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1187,7 +1187,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r28c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1234,7 +1234,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r17c09",
+    "image": "Spritesheet_Items_r17c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1261,7 +1261,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r02c07",
+    "image": "Spritesheet_Items_r02c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1308,7 +1308,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r34c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1332,7 +1332,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r28c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1380,7 +1380,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r44c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1404,7 +1404,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r29c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1428,7 +1428,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r34c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1477,7 +1477,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r18c02",
+    "image": "Spritesheet_Items_r18c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1527,7 +1527,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Items_r19c00",
+    "image": "Spritesheet_Items_r19c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1554,7 +1554,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r60c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1578,7 +1578,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r33c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1600,7 +1600,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r39c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1618,7 +1618,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r26c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1639,7 +1639,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r55c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1659,7 +1659,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r37c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1699,7 +1699,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r11c06",
+    "image": "Spritesheet_Items_r11c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1717,7 +1717,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r32c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1737,7 +1737,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r32c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1757,7 +1757,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r31c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1777,7 +1777,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r29c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1795,7 +1795,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r04c06",
+    "image": "Spritesheet_Items_r04c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1813,7 +1813,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r36c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1849,7 +1849,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r00c05",
+    "image": "Spritesheet_Items_r00c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1887,7 +1887,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r00c06",
+    "image": "Spritesheet_Items_r00c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1964,7 +1964,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r03c06",
+    "image": "Spritesheet_Items_r03c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2000,7 +2000,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r19c10",
+    "image": "Spritesheet_Items_r19c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2018,7 +2018,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r08c01",
+    "image": "Spritesheet_Items_r08c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2039,7 +2039,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r07c07",
+    "image": "Spritesheet_Items_r07c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2059,7 +2059,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r15c02",
+    "image": "Spritesheet_Items_r15c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2080,7 +2080,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r17c07",
+    "image": "Spritesheet_Items_r17c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2100,7 +2100,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r16c09",
+    "image": "Spritesheet_Items_r16c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2240,7 +2240,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r31c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2375,7 +2375,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r00c08",
+    "image": "Spritesheet_Items_r00c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2396,7 +2396,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r01c08",
+    "image": "Spritesheet_Items_r01c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2414,7 +2414,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r27c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2432,7 +2432,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r41c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2450,7 +2450,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r00c09",
+    "image": "Spritesheet_Items_r00c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2491,7 +2491,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r00c11",
+    "image": "Spritesheet_Items_r00c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2514,7 +2514,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r08c05",
+    "image": "Spritesheet_Items_r08c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2571,7 +2571,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r13c01",
+    "image": "Spritesheet_Items_r13c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2589,7 +2589,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r29c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2609,7 +2609,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r35c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2650,7 +2650,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r21c02",
+    "image": "Spritesheet_Items_r59c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2704,7 +2704,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r26c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2722,7 +2722,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r00c10",
+    "image": "Spritesheet_Items_r00c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2740,7 +2740,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r37c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2758,7 +2758,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r38c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2779,7 +2779,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r17c10",
+    "image": "Spritesheet_Items_r17c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2799,7 +2799,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r04c04",
+    "image": "Spritesheet_Items_r04c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2845,7 +2845,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r18c08",
+    "image": "Spritesheet_Items_r18c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2861,12 +2861,13 @@
     "speed": -5,
     "tags": [
       "gem",
+      "jewelry",
       "citrine"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r14c10",
+    "image": "Spritesheet_Items_r14c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2883,12 +2884,13 @@
     "tags": [
       "gem",
       "ring",
+      "jewelry",
       "citrine"
     ],
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r05c05",
+    "image": "Spritesheet_Items_r05c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2908,7 +2910,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r34c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2928,7 +2930,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r24c04",
+    "image": "Spritesheet_Items_r24c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2948,7 +2950,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r42c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2968,7 +2970,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r32c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2992,7 +2994,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r36c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3102,7 +3104,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r37c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3122,7 +3124,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r16c10",
+    "image": "Spritesheet_Items_r16c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3160,7 +3162,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r13c08",
+    "image": "Spritesheet_Items_r13c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3180,7 +3182,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r02c01",
+    "image": "Spritesheet_Items_r02c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3200,7 +3202,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r08c00",
+    "image": "Spritesheet_Items_r08c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3406,7 +3408,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r12c11",
+    "image": "Spritesheet_Items_r12c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -3445,7 +3447,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r08c10",
+    "image": "Spritesheet_Items_r08c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3463,7 +3465,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r37c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3534,12 +3536,13 @@
     "armor": 0,
     "speed": 0,
     "tags": [
+      "jewelry",
       "gem"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r60c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3559,7 +3562,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r53c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -3582,7 +3585,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r52c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -3623,7 +3626,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r17c05",
+    "image": "Spritesheet_Items_r17c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3663,7 +3666,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r01c02",
+    "image": "Spritesheet_Items_r01c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3685,7 +3688,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r12c06",
+    "image": "Spritesheet_Items_r12c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3706,7 +3709,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r01c07",
+    "image": "Spritesheet_Items_r01c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3722,12 +3725,13 @@
     "speed": 0,
     "tags": [
       "gem",
+      "jewelry",
       "emerald"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r14c08",
+    "image": "Spritesheet_Items_r14c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3743,13 +3747,14 @@
     "speed": 0,
     "tags": [
       "gem",
+      "jewelry",
       "ring",
       "emerald"
     ],
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r01c04",
+    "image": "Spritesheet_Items_r01c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3785,7 +3790,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r42c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3805,7 +3810,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r36c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3823,7 +3828,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r15c00",
+    "image": "Spritesheet_Items_r15c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3866,7 +3871,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r01c05",
+    "image": "Spritesheet_Items_r01c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3976,7 +3981,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r02c06",
+    "image": "Spritesheet_Items_r02c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3994,7 +3999,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r44c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4012,7 +4017,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r03c11",
+    "image": "Spritesheet_Items_r03c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4140,7 +4145,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r11c11",
+    "image": "Spritesheet_Items_r11c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4179,7 +4184,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r18c06",
+    "image": "Spritesheet_Items_r18c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4238,7 +4243,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r19c11",
+    "image": "Spritesheet_Items_r19c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4297,7 +4302,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r10c07",
+    "image": "Spritesheet_Items_r10c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4333,7 +4338,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r11c04",
+    "image": "Spritesheet_Items_r11c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4353,7 +4358,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r30c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4373,7 +4378,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r45c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4391,7 +4396,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r60c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4411,7 +4416,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r11c01",
+    "image": "Spritesheet_Items_r11c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4431,7 +4436,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r15c11",
+    "image": "Spritesheet_Items_r15c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4451,7 +4456,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r44c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4471,7 +4476,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r40c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4544,12 +4549,13 @@
     "speed": 0,
     "tags": [
       "gem",
+      "jewelry",
       "ring"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r01c06",
+    "image": "Spritesheet_Items_r01c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4569,7 +4575,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r20c03",
+    "image": "Spritesheet_Items_r20c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4629,7 +4635,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r23c00",
+    "image": "Spritesheet_Items_r23c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -4652,7 +4658,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r40c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4693,7 +4699,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r19c05",
+    "image": "Spritesheet_Items_r19c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4749,7 +4755,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r44c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4849,7 +4855,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4869,7 +4875,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r18c03",
+    "image": "Spritesheet_Items_r18c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4890,7 +4896,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r35c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5043,7 +5049,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r29c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -5064,7 +5070,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r22c08",
+    "image": "Spritesheet_Items_r22c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5102,7 +5108,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r20c00",
+    "image": "Spritesheet_Items_r20c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5120,7 +5126,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r20c09",
+    "image": "Spritesheet_Items_r20c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5140,7 +5146,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 60,
-    "image": "Spritesheet_Items_r15c04",
+    "image": "Spritesheet_Items_r15c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5158,7 +5164,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r04c01",
+    "image": "Spritesheet_Items_r04c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5194,7 +5200,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r50c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5214,7 +5220,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r60c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5254,7 +5260,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r39c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5274,7 +5280,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r40c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5294,7 +5300,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r24c00",
+    "image": "Spritesheet_Items_r24c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5312,7 +5318,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r06c06",
+    "image": "Spritesheet_Items_r06c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5332,7 +5338,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r28c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5350,7 +5356,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r07c01",
+    "image": "Spritesheet_Items_r07c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -5371,7 +5377,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r08c04",
+    "image": "Spritesheet_Items_r08c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5410,7 +5416,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r44c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5430,7 +5436,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r06c09",
+    "image": "Spritesheet_Items_r06c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5450,7 +5456,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r03c02",
+    "image": "Spritesheet_Items_r03c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5490,7 +5496,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r10c02",
+    "image": "Spritesheet_Items_r10c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5510,7 +5516,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r38c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5528,7 +5534,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r31c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5566,7 +5572,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r27c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5584,7 +5590,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r10c05",
+    "image": "Spritesheet_Items_r10c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5602,7 +5608,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r42c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5620,7 +5626,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r14c02",
+    "image": "Spritesheet_Items_r14c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5638,7 +5644,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r13c09",
+    "image": "Spritesheet_Items_r13c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5656,7 +5662,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r27c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5696,7 +5702,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r04c07",
+    "image": "Spritesheet_Items_r04c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5717,7 +5723,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r07c00",
+    "image": "Spritesheet_Items_r07c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5737,7 +5743,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r11c08",
+    "image": "Spritesheet_Items_r11c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5758,7 +5764,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r20c02",
+    "image": "Spritesheet_Items_r20c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5778,7 +5784,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r34c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5798,7 +5804,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r26c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5839,7 +5845,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r33c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5859,7 +5865,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r42c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5879,7 +5885,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r35c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5900,7 +5906,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5921,7 +5927,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r44c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5941,7 +5947,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r31c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5977,7 +5983,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r30c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6035,7 +6041,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r02c00",
+    "image": "Spritesheet_Items_r02c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6094,7 +6100,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r35c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6130,7 +6136,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r32c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6202,7 +6208,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r39c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6238,7 +6244,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r38c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6294,7 +6300,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r19c07",
+    "image": "Spritesheet_Items_r19c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6315,7 +6321,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6335,7 +6341,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r37c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6353,7 +6359,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r37c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6373,7 +6379,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r09c11",
+    "image": "Spritesheet_Items_r09c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6394,7 +6400,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6430,7 +6436,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r30c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6450,7 +6456,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r09c09",
+    "image": "Spritesheet_Items_r09c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6470,7 +6476,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r30c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6616,7 +6622,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r03c09",
+    "image": "Spritesheet_Items_r03c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6634,7 +6640,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r44c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6751,7 +6757,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r35c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6773,7 +6779,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r12c02",
+    "image": "Spritesheet_Items_r43c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6794,7 +6800,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r12c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6832,7 +6838,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r07c03",
+    "image": "Spritesheet_Items_r07c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6868,7 +6874,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r31c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6888,7 +6894,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r08c08",
+    "image": "Spritesheet_Items_r08c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6980,7 +6986,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r13c07",
+    "image": "Spritesheet_Items_r13c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7016,7 +7022,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r37c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7076,7 +7082,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r32c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7098,7 +7104,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7118,7 +7124,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r25c02",
+    "image": "Spritesheet_Items_r25c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7139,7 +7145,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r35c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7159,7 +7165,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r06c05",
+    "image": "Spritesheet_Items_r06c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7180,7 +7186,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r25c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7236,7 +7242,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r21c01",
+    "image": "Spritesheet_Items_r21c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7367,7 +7373,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r14c04",
+    "image": "Spritesheet_Items_r14c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7387,7 +7393,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r11c07",
+    "image": "Spritesheet_Items_r11c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7408,7 +7414,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r01c10",
+    "image": "Spritesheet_Items_r01c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7468,7 +7474,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r26c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7489,7 +7495,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r33c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7525,7 +7531,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r15c09",
+    "image": "Spritesheet_Items_r15c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7545,7 +7551,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r32c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7563,7 +7569,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r09c05",
+    "image": "Spritesheet_Items_r09c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7581,7 +7587,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r26c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7603,7 +7609,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r12c07",
+    "image": "Spritesheet_Items_r12c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7619,12 +7625,13 @@
     "speed": 0,
     "tags": [
       "gem",
+      "jewelry",
       "ruby"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r14c09",
+    "image": "Spritesheet_Items_r14c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7645,7 +7652,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r00c07",
+    "image": "Spritesheet_Items_r00c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7661,13 +7668,14 @@
     "speed": 0,
     "tags": [
       "gem",
+      "jewelry",
       "ring",
       "ruby"
     ],
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r02c10",
+    "image": "Spritesheet_Items_r02c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7685,7 +7693,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r22c02",
+    "image": "Spritesheet_Items_r22c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7703,7 +7711,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r18c07",
+    "image": "Spritesheet_Items_r18c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7721,7 +7729,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r39c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7761,7 +7769,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r34c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7781,7 +7789,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r22c10",
+    "image": "Spritesheet_Items_r22c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7801,7 +7809,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r02c09",
+    "image": "Spritesheet_Items_r02c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -7825,7 +7833,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r19c07",
+    "image": "Spritesheet_Items_r19c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7867,7 +7875,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r12c08",
+    "image": "Spritesheet_Items_r12c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7888,7 +7896,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r02c08",
+    "image": "Spritesheet_Items_r02c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7904,12 +7912,13 @@
     "speed": 0,
     "tags": [
       "gem",
+      "jewelry",
       "sapphire"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r14c11",
+    "image": "Spritesheet_Items_r14c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7926,12 +7935,13 @@
     "tags": [
       "gem",
       "ring",
+      "jewelry",
       "sapphire"
     ],
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r02c11",
+    "image": "Spritesheet_Items_r02c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7949,7 +7959,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r61c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7987,7 +7997,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r59c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8007,7 +8017,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r33c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8025,7 +8035,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r27c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8081,7 +8091,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r35c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8099,7 +8109,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r15c06",
+    "image": "Spritesheet_Items_r15c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8135,7 +8145,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r03c07",
+    "image": "Spritesheet_Items_r03c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8173,7 +8183,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r41c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8191,7 +8201,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r26c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8209,7 +8219,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r22c04",
+    "image": "Spritesheet_Items_r22c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8229,7 +8239,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r33c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8247,7 +8257,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r24c11",
+    "image": "Spritesheet_Items_r24c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8265,7 +8275,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r40c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8285,7 +8295,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r25c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8305,7 +8315,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r00c01",
+    "image": "Spritesheet_Items_r00c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8364,7 +8374,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r40c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8385,7 +8395,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8403,7 +8413,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r31c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8423,7 +8433,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r34c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8464,7 +8474,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r23c06",
+    "image": "Spritesheet_Items_r23c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8571,13 +8581,11 @@
     "attack": 0,
     "armor": 0,
     "speed": 0,
-    "tags": [
-      "jewelry"
-    ],
+    "tags": [],
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": null,
+    "image": "Spritesheet_Items_r61c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8597,7 +8605,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 1,
-    "image": null,
+    "image": "Spritesheet_Items_r28c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8615,7 +8623,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r37c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8651,7 +8659,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r29c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8669,7 +8677,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r09c00",
+    "image": "Spritesheet_Items_r09c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8690,7 +8698,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r03c05",
+    "image": "Spritesheet_Items_r03c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8730,7 +8738,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r34c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8748,7 +8756,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r46c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8766,7 +8774,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r15c01",
+    "image": "Spritesheet_Items_r15c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8784,7 +8792,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r14c05",
+    "image": "Spritesheet_Items_r14c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8804,7 +8812,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r33c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8824,7 +8832,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r19c04",
+    "image": "Spritesheet_Items_r19c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8842,7 +8850,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r14c03",
+    "image": "Spritesheet_Items_r14c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8860,7 +8868,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r39c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8878,7 +8886,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r27c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8896,7 +8904,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r61c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8914,7 +8922,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r10c03",
+    "image": "Spritesheet_Items_r10c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8932,7 +8940,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r44c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8950,7 +8958,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r12c01",
+    "image": "Spritesheet_Items_r12c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8988,7 +8996,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Items_r15c05",
+    "image": "Spritesheet_Items_r15c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9134,7 +9142,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r00c04",
+    "image": "Spritesheet_Items_r00c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9152,7 +9160,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r42c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9190,7 +9198,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Items_r13c11",
+    "image": "Spritesheet_Items_r13c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9244,7 +9252,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r61c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9300,7 +9308,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r27c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -9321,7 +9329,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": null,
+    "image": "Spritesheet_Items_r37c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9341,7 +9349,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r23c01",
+    "image": "Spritesheet_Items_r23c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -9364,7 +9372,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Items_r17c04",
+    "image": "Spritesheet_Items_r17c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9436,7 +9444,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r26c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9477,7 +9485,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r60c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9495,7 +9503,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": null,
+    "image": "Spritesheet_Items_r41c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9515,7 +9523,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r22c06",
+    "image": "Spritesheet_Items_r22c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9556,7 +9564,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Items_r04c10",
+    "image": "Spritesheet_Items_r04c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9574,7 +9582,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r21c09",
+    "image": "Spritesheet_Items_r21c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9592,7 +9600,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": null,
+    "image": "Spritesheet_Items_r40c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9613,7 +9621,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r43c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9633,7 +9641,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Items_r04c02",
+    "image": "Spritesheet_Items_r04c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9671,7 +9679,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r33c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9707,7 +9715,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Items_r10c11",
+    "image": "Spritesheet_Items_r10c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9725,7 +9733,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r31c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9745,7 +9753,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Items_r14c00",
+    "image": "Spritesheet_Items_r14c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,

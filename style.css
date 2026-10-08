@@ -179,11 +179,12 @@ body {
 .item-picker {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex: 1 1 0;
+    align-items: flex-start;
 }
 
 .item-grid {
-    flex-grow: 2.5;
+    flex: 2.5 1 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -192,7 +193,33 @@ body {
 }
 
 .item-filter {
-    flex-grow: 1.5;
+    flex: 1 1 0;
+}
+
+.rarity-filter, .tag-filter {
+    display: none;
+}
+
+label:has(input) {
+    background-color: #e6deca;
+    border-radius: 3px;
+    color: #25131a;
+    padding: 4px;
+    margin: 4px;
+    opacity: 0.5;
+    display: inline-block;
+    font-size: 20px;
+}
+
+label:has(input:checked) {
+    opacity: 1.0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tooltip {

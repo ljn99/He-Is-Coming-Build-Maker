@@ -14,7 +14,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r07c03",
+    "image": "Spritesheet_Weapons_r07c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -41,7 +41,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r13c11",
+    "image": "Spritesheet_Weapons_r13c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -65,7 +65,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r14c10",
+    "image": "Spritesheet_Weapons_r14c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -90,7 +90,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r17c05",
+    "image": "Spritesheet_Weapons_r17c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -114,7 +114,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r13c10",
+    "image": "Spritesheet_Weapons_r13c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -162,7 +162,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r17c07",
+    "image": "Spritesheet_Weapons_r17c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -187,7 +187,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r13c09",
+    "image": "Spritesheet_Weapons_r13c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -212,7 +212,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r15c08",
+    "image": "Spritesheet_Weapons_r15c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -259,7 +259,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r15c04",
+    "image": "Spritesheet_Weapons_r15c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -283,7 +283,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": "Spritesheet_Weapons_r13c07",
+    "image": "Spritesheet_Weapons_r13c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -345,7 +345,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r22c04",
+    "image": "Spritesheet_Weapons_r22c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -366,7 +366,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r23c07",
+    "image": "Spritesheet_Weapons_r23c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -404,7 +404,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r23c08",
+    "image": "Spritesheet_Weapons_r23c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -424,7 +424,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r23c05",
+    "image": "Spritesheet_Weapons_r23c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -464,7 +464,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r23c10",
+    "image": "Spritesheet_Weapons_r23c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -482,7 +482,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r23c09",
+    "image": "Spritesheet_Weapons_r23c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -502,7 +502,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r23c06",
+    "image": "Spritesheet_Weapons_r23c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -556,7 +556,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r01c10",
+    "image": "Spritesheet_Weapons_r01c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -574,7 +574,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r23c11",
+    "image": "Spritesheet_Weapons_r23c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -594,7 +594,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r10c04",
+    "image": "Spritesheet_Weapons_r10c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -612,7 +612,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r10c00",
+    "image": "Spritesheet_Weapons_r10c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -630,7 +630,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r00c06",
+    "image": "Spritesheet_Weapons_r00c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -681,12 +681,13 @@
     "armor": 0,
     "speed": 0,
     "tags": [
-      "gem"
+      "gem",
+      "jewelry"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r00c01",
+    "image": "Spritesheet_Weapons_r00c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -704,7 +705,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r04c11",
+    "image": "Spritesheet_Weapons_r04c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -724,7 +725,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r07c05",
+    "image": "Spritesheet_Weapons_r07c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -744,7 +745,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r08c09",
+    "image": "Spritesheet_Weapons_r08c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -782,7 +783,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r17c11",
+    "image": "Spritesheet_Weapons_r17c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -895,7 +896,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r11c06",
+    "image": "Spritesheet_Weapons_r11c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -935,7 +936,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r00c02",
+    "image": "Spritesheet_Weapons_r00c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -958,7 +959,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r04c06",
+    "image": "Spritesheet_Weapons_r04c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -979,7 +980,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r10c01",
+    "image": "Spritesheet_Weapons_r10c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1033,7 +1034,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r17c09",
+    "image": "Spritesheet_Weapons_r17c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1051,7 +1052,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r14c05",
+    "image": "Spritesheet_Weapons_r14c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1071,7 +1072,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r03c11",
+    "image": "Spritesheet_Weapons_r03c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1132,7 +1133,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r22c02",
+    "image": "Spritesheet_Weapons_r22c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1152,7 +1153,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r16c08",
+    "image": "Spritesheet_Weapons_r16c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1224,7 +1225,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r24c11",
+    "image": "Spritesheet_Weapons_r24c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1264,7 +1265,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r00c05",
+    "image": "Spritesheet_Weapons_r00c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1318,7 +1319,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r07c00",
+    "image": "Spritesheet_Weapons_r07c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1390,7 +1391,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r00c08",
+    "image": "Spritesheet_Weapons_r00c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1429,7 +1430,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r12c05",
+    "image": "Spritesheet_Weapons_r12c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1467,7 +1468,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r10c11",
+    "image": "Spritesheet_Weapons_r10c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1525,7 +1526,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r12c06",
+    "image": "Spritesheet_Weapons_r12c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1543,7 +1544,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r18c08",
+    "image": "Spritesheet_Weapons_r18c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1558,12 +1559,13 @@
     "armor": 0,
     "speed": 0,
     "tags": [
-      "gem"
+      "gem",
+      "jewelry"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r00c03",
+    "image": "Spritesheet_Weapons_r00c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1603,7 +1605,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r11c08",
+    "image": "Spritesheet_Weapons_r11c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1623,7 +1625,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r18c02",
+    "image": "Spritesheet_Weapons_r18c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1643,7 +1645,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r01c05",
+    "image": "Spritesheet_Weapons_r01c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1661,7 +1663,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": "Spritesheet_Weapons_r01c09",
+    "image": "Spritesheet_Weapons_r01c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1681,7 +1683,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r16c11",
+    "image": "Spritesheet_Weapons_r16c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1701,7 +1703,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r03c02",
+    "image": "Spritesheet_Weapons_r03c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1739,7 +1741,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r01c01",
+    "image": "Spritesheet_Weapons_r01c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1793,7 +1795,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r01c02",
+    "image": "Spritesheet_Weapons_r01c02.png",
     "stackable": true,
     "maxStacks": 4,
     "dynamicEffect": null
@@ -1851,7 +1853,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": "Spritesheet_Weapons_r17c04",
+    "image": "Spritesheet_Weapons_r17c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1887,7 +1889,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r19c10",
+    "image": "Spritesheet_Weapons_r19c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1925,7 +1927,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r08c07",
+    "image": "Spritesheet_Weapons_r08c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1945,7 +1947,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r01c07",
+    "image": "Spritesheet_Weapons_r01c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1965,7 +1967,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r14c03",
+    "image": "Spritesheet_Weapons_r14c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1983,7 +1985,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r15c01",
+    "image": "Spritesheet_Weapons_r15c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2001,7 +2003,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r14c09",
+    "image": "Spritesheet_Weapons_r14c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2039,7 +2041,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r15c09",
+    "image": "Spritesheet_Weapons_r15c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2059,7 +2061,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r07c09",
+    "image": "Spritesheet_Weapons_r07c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2079,7 +2081,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r11c11",
+    "image": "Spritesheet_Weapons_r11c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2119,7 +2121,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r17c00",
+    "image": "Spritesheet_Weapons_r17c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2139,7 +2141,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r05c04",
+    "image": "Spritesheet_Weapons_r05c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2159,7 +2161,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r16c09",
+    "image": "Spritesheet_Weapons_r16c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2177,7 +2179,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r14c01",
+    "image": "Spritesheet_Weapons_r14c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2195,7 +2197,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r12c08",
+    "image": "Spritesheet_Weapons_r12c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2215,7 +2217,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r24c07",
+    "image": "Spritesheet_Weapons_r24c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2238,7 +2240,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r01c08",
+    "image": "Spritesheet_Weapons_r01c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2281,7 +2283,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r17c06",
+    "image": "Spritesheet_Weapons_r17c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2319,7 +2321,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r04c07",
+    "image": "Spritesheet_Weapons_r04c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2337,7 +2339,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r16c10",
+    "image": "Spritesheet_Weapons_r16c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2377,7 +2379,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r13c03",
+    "image": "Spritesheet_Weapons_r13c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2397,7 +2399,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r24c08",
+    "image": "Spritesheet_Weapons_r24c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2417,7 +2419,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r16c04",
+    "image": "Spritesheet_Weapons_r16c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2437,7 +2439,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r11c07",
+    "image": "Spritesheet_Weapons_r11c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2473,7 +2475,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r10c02",
+    "image": "Spritesheet_Weapons_r10c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2511,7 +2513,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r01c06",
+    "image": "Spritesheet_Weapons_r01c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2531,7 +2533,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r18c05",
+    "image": "Spritesheet_Weapons_r18c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2569,7 +2571,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r11c00",
+    "image": "Spritesheet_Weapons_r11c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2607,7 +2609,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r02c01",
+    "image": "Spritesheet_Weapons_r02c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2622,12 +2624,13 @@
     "armor": 0,
     "speed": 0,
     "tags": [
-      "gem"
+      "gem",
+      "jewelry"
     ],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r00c11",
+    "image": "Spritesheet_Weapons_r00c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2683,7 +2686,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r10c05",
+    "image": "Spritesheet_Weapons_r10c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2703,7 +2706,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r18c04",
+    "image": "Spritesheet_Weapons_r18c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2723,7 +2726,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r10c08",
+    "image": "Spritesheet_Weapons_r10c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2762,7 +2765,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r02c04",
+    "image": "Spritesheet_Weapons_r02c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2780,7 +2783,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r24c04",
+    "image": "Spritesheet_Weapons_r24c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2798,7 +2801,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r04c04",
+    "image": "Spritesheet_Weapons_r04c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2816,7 +2819,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r04c01",
+    "image": "Spritesheet_Weapons_r04c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2852,7 +2855,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r08c10",
+    "image": "Spritesheet_Weapons_r08c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2870,7 +2873,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r25c00",
+    "image": "Spritesheet_Weapons_r25c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2924,7 +2927,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r02c05",
+    "image": "Spritesheet_Weapons_r02c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2960,7 +2963,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r24c06",
+    "image": "Spritesheet_Weapons_r24c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2978,7 +2981,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r17c01",
+    "image": "Spritesheet_Weapons_r17c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3014,7 +3017,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r24c10",
+    "image": "Spritesheet_Weapons_r24c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3034,7 +3037,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r02c07",
+    "image": "Spritesheet_Weapons_r02c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3052,7 +3055,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": "Spritesheet_Weapons_r07c06",
+    "image": "Spritesheet_Weapons_r07c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3088,7 +3091,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r12c00",
+    "image": "Spritesheet_Weapons_r12c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3106,7 +3109,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 3,
-    "image": "Spritesheet_Weapons_r02c06",
+    "image": "Spritesheet_Weapons_r02c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3149,7 +3152,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r04c00",
+    "image": "Spritesheet_Weapons_r04c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -3170,7 +3173,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r03c04",
+    "image": "Spritesheet_Weapons_r03c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3224,7 +3227,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 5,
-    "image": "Spritesheet_Weapons_r05c11",
+    "image": "Spritesheet_Weapons_r05c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3260,7 +3263,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r02c11",
+    "image": "Spritesheet_Weapons_r02c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3296,7 +3299,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 2,
-    "image": "Spritesheet_Weapons_r24c09",
+    "image": "Spritesheet_Weapons_r24c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3352,7 +3355,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r04c09",
+    "image": "Spritesheet_Weapons_r04c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3390,7 +3393,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 1,
-    "image": "Spritesheet_Weapons_r03c01",
+    "image": "Spritesheet_Weapons_r03c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3411,7 +3414,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": "Spritesheet_Weapons_r00c04",
+    "image": "Spritesheet_Weapons_r00c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
