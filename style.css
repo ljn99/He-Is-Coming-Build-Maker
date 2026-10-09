@@ -196,7 +196,14 @@ body {
     flex: 1 1 0;
 }
 
-.rarity-filter, .tag-filter {
+input[type="text"] {
+    display: block;
+    margin: 0 auto;
+    font-family: "Alkhemikal", sans-serif;
+    font-size: 24px;
+}
+
+.rarity-filter, .tag-filter, .bundle-filter {
     display: none;
 }
 
@@ -215,11 +222,24 @@ label:has(input:checked) {
     opacity: 1.0;
 }
 
+.bundle-icon {
+    background-color: #25131a;
+}
+
+.bundle-icon img {
+    height: 32px;
+    image-rendering: pixelated;
+}
+
 ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.bundles {
+    padding: 0;
 }
 
 .tooltip {

@@ -208,7 +208,7 @@ function getRarityFiters() {
 
     document.querySelectorAll(".rarity-filter").forEach(el => {
         if (el.checked) {
-            rarityFilters.push(el.value)
+            rarityFilters.push(el.value);
         };
     });
 
@@ -220,11 +220,23 @@ function getTagFiters() {
 
     document.querySelectorAll(".tag-filter").forEach(el => {
         if (el.checked) {
-            tagFilters.push(el.value)
+            tagFilters.push(el.value);
         };
     });
 
     return tagFilters;
+};
+
+function getBundleFilters() {
+    const bundleFilters = [];
+
+    document.querySelectorAll(".bundle-filter").forEach(el => {
+        if (el.checked) {
+            bundleFilters.push(el.value);
+        };
+    });
+
+    return bundleFilters;
 };
 
 function renderItemGrid() {
@@ -233,6 +245,8 @@ function renderItemGrid() {
 
     const rarityFilters = getRarityFiters();
     const tagFilters = getTagFiters();
+    const bundleFilters = getBundleFilters();
+    const searchFilter = getSearchText();
 
     const groups = [
         { list: allWeapons, imageFolder: weaponImgPath, category: "weapon" },
@@ -241,7 +255,7 @@ function renderItemGrid() {
 
     groups.forEach(group => {
         group.list.forEach(item => {
-            if (!passesFilters(item, rarityFilters, tagFilters)) {
+            if (!passesFilters(item, rarityFilters, tagFilters, bundleFilters, searchFilter)) {
                 return;
             }
 
@@ -297,10 +311,29 @@ function renderItemGrid() {
     });
 }
 
-function passesFilters(item, rarityFilters, tagFilters) {
+function passesFilters(item, rarityFilters, tagFilters, bundleFilters, searchText) {
     const rarityOk = rarityFilters.length === 0 || rarityFilters.includes(item.rarity);
     const tagOk = tagFilters.length === 0 || tagFilters.every(tag => item.tags.includes(tag));
-    return rarityOk && tagOk;
+    const searchOk = item.name.toLowerCase().includes(searchText);
+    const wanted = bundleFilters.map(Number);
+    let bundleOk = null;
+
+    if (wanted.length !== 0) {
+        if (item.rarity === "cauldron") {
+            bundleOk = item.regionBundles.every(bundle => wanted.includes(bundle))
+        } else {
+            bundleOk = wanted.includes(item.kingmakerBundle);
+        }
+
+    } else {
+        bundleOk = true;
+    }
+
+    return rarityOk && tagOk && bundleOk && searchOk;
+}
+
+function getSearchText() {
+    return document.querySelector("#item-search").value.toLowerCase();
 }
 
 const itemSlotElements = document.querySelectorAll(".item-slot-build");
@@ -322,6 +355,12 @@ document.querySelectorAll(".rarity-filter").forEach(el => {
 document.querySelectorAll(".tag-filter").forEach(el => {
     el.addEventListener("change", () => renderItemGrid());
 });
+
+document.querySelectorAll(".bundle-filter").forEach(el => {
+    el.addEventListener("change", () => renderItemGrid());
+});
+
+document.querySelector("#item-search").addEventListener("input", () => renderItemGrid());
 
 loadItems(weaponData, data => { allWeapons = data; });
 loadItems(itemData, data => { allItems = data; });
