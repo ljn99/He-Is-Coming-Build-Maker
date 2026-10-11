@@ -112,7 +112,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r45c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -185,7 +185,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r45c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -407,7 +407,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r46c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -632,7 +632,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 50,
-    "image": null,
+    "image": "Spritesheet_Items_r52c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -977,7 +977,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r45c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1117,7 +1117,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r46c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1140,7 +1140,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r45c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1163,7 +1163,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r46c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1211,7 +1211,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r45c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1285,7 +1285,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r46c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -1679,7 +1679,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r55c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1831,7 +1831,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r54c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1867,7 +1867,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r09c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1965,24 +1965,6 @@
     "hasDiamond": false,
     "kingmakerBundle": 1,
     "image": "Spritesheet_Items_r03c06.png",
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
-    "id": "blackbriar_armor_o_l_d",
-    "name": "Blackbriar Armor OLD",
-    "rarity": "heroic",
-    "description": "Whenever you lose armor, gain 2 thorns",
-    "healthBonus": 0,
-    "attack": -1,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2138,7 +2120,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r16c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2158,7 +2140,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r60c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2178,7 +2160,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2198,7 +2180,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2219,7 +2201,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2258,7 +2240,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r50c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2299,7 +2281,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r54c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2317,7 +2299,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2337,7 +2319,25 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r52c02.png",
+    "stackable": false,
+    "maxStacks": 1,
+    "dynamicEffect": null
+  },
+  {
+    "id": "bone_pendant",
+    "name": "Bone Pendant",
+    "rarity": "rare",
+    "description": "On Hit: If your attack is exactly 1, gain 1 bone",
+    "healthBonus": 0,
+    "attack": 0,
+    "armor": 0,
+    "speed": 0,
+    "tags": [],
+    "hasGolden": false,
+    "hasDiamond": false,
+    "kingmakerBundle": 7,
+    "image": "Spritesheet_Items_r26c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2355,7 +2355,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r54c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2535,7 +2535,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r57c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2627,7 +2627,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r57c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -2668,7 +2668,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r38c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2686,7 +2686,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r19c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3003,16 +3003,16 @@
     "id": "cloud_armor",
     "name": "Cloud Armor",
     "rarity": "rare",
-    "description": "Whenever you would lose health, lose speed instead to decrease the amount of damage taken",
+    "description": null,
     "healthBonus": 0,
     "attack": 0,
-    "armor": 0,
-    "speed": 2,
+    "armor": 5,
+    "speed": 5,
     "tags": [],
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r44c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3048,7 +3048,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r11c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3068,7 +3068,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r19c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3086,7 +3086,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3142,7 +3142,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r21c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3220,7 +3220,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r55c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3278,7 +3278,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r59c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3298,7 +3298,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3334,7 +3334,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r04c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3343,7 +3343,7 @@
     "id": "decaying_muscle",
     "name": "Decaying Muscle",
     "rarity": "rare",
-    "description": "While the enemy has wither, temporarily give them -1 attack",
+    "description": "While the enemy has wither, temporarily give them -2 attack",
     "healthBonus": 0,
     "attack": 0,
     "armor": 0,
@@ -3352,7 +3352,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r56c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3370,7 +3370,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r20c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3388,7 +3388,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r13c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3429,7 +3429,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r60c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3494,7 +3494,7 @@
     "id": "druids_cloak",
     "name": "Druid's Cloak",
     "rarity": "heroic",
-    "description": null,
+    "description": "Whenever you lose health, gain that much armor. You cannot restore health",
     "healthBonus": 0,
     "attack": 0,
     "armor": 0,
@@ -3503,7 +3503,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r32c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3760,24 +3760,6 @@
     "dynamicEffect": null
   },
   {
-    "id": "empty_item",
-    "name": "Empty Item",
-    "rarity": "edge",
-    "description": null,
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
     "id": "energy_drain",
     "name": "Energy Drain",
     "rarity": "rare",
@@ -3945,7 +3927,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r24c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4107,7 +4089,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r15c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4163,7 +4145,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r55c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4284,7 +4266,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4482,24 +4464,6 @@
     "dynamicEffect": null
   },
   {
-    "id": "generic_ring",
-    "name": "Generic Ring",
-    "rarity": "edge",
-    "description": null,
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
     "id": "giants_armor",
     "name": "Giant's Armor",
     "rarity": "heroic",
@@ -4512,7 +4476,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r38c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4530,7 +4494,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r45c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -4595,7 +4559,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r55c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4610,7 +4574,7 @@
     "armor": 0,
     "speed": 0,
     "tags": [
-      "wood"
+      "stone"
     ],
     "hasGolden": false,
     "hasDiamond": false,
@@ -4678,7 +4642,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r19c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4717,7 +4681,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r50c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4773,7 +4737,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r50c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -4815,7 +4779,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4914,7 +4878,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r48c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4955,7 +4919,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4973,7 +4937,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -4991,7 +4955,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5029,7 +4993,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5182,7 +5146,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r47c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5499,7 +5463,12 @@
     "image": "Spritesheet_Items_r10c02.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": {
+      "type": "addIf",
+      "stat": "attack",
+      "amount": 2,
+      "when": { "stat": "armor", "source": "totals", "op": "gt", "value": 0 }
+    }
   },
   {
     "id": "kindling_bomb",
@@ -5554,7 +5523,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r45c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -5575,7 +5544,12 @@
     "image": "Spritesheet_Items_r27c07.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": {
+      "type": "doubleOwnBonus",
+      "stat": "health",
+      "field": "healthBonus",
+      "when": { "stat": "armor", "source": "base", "op": "lte", "value": 0 }
+    }
   },
   {
     "id": "leather_boots",
@@ -5965,7 +5939,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r47c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6021,7 +5995,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r36c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6082,7 +6056,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r39c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6118,7 +6092,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r54c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6190,7 +6164,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r42c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6280,7 +6254,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r49c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6459,7 +6433,7 @@
     "image": "Spritesheet_Items_r09c09.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "perTag", "tag": "wood", "stat": "health", "amount": 3 }
   },
   {
     "id": "oakheart_shield",
@@ -6494,25 +6468,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
-    "id": "obsidian_armor",
-    "name": "Obsidian Armor",
-    "rarity": "heroic",
-    "description": "Immune to non-weapon damage",
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r61c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6530,7 +6486,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r61c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6566,7 +6522,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r62c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6584,7 +6540,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r62c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6602,7 +6558,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r62c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6678,7 +6634,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r62c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6699,7 +6655,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r57c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6818,7 +6774,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r47c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6930,7 +6886,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r46c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -6968,7 +6924,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r31c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7004,7 +6960,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r10c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7040,7 +6996,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r37c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7062,7 +7018,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r56c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7192,24 +7148,6 @@
     "dynamicEffect": null
   },
   {
-    "id": "questionmark_item",
-    "name": "QuestionmarkItem",
-    "rarity": "common",
-    "description": null,
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
     "id": "rage_bomb",
     "name": "Rage Bomb",
     "rarity": "rare",
@@ -7224,7 +7162,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r42c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7260,7 +7198,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r02c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7296,7 +7234,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7332,13 +7270,31 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r50c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
     "rawTags": [
       38
     ]
+  },
+  {
+    "id": "red_cloak",
+    "name": "Red Cloak",
+    "rarity": "rare",
+    "description": "Battle Start: The enemy's next strike deals double damage",
+    "healthBonus": 0,
+    "attack": 0,
+    "armor": 8,
+    "speed": 0,
+    "tags": [],
+    "hasGolden": false,
+    "hasDiamond": false,
+    "kingmakerBundle": 7,
+    "image": "Spritesheet_Items_r57c09.png",
+    "stackable": false,
+    "maxStacks": 1,
+    "dynamicEffect": null
   },
   {
     "id": "redsteel_shard",
@@ -7353,7 +7309,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r60c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7434,7 +7390,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r39c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7513,7 +7469,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r50c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7749,7 +7705,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r39c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7853,7 +7809,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -7977,7 +7933,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r08c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8045,7 +8001,7 @@
     "name": "Severed Hand",
     "rarity": "rare",
     "description": "Whenever the enemy takes damage from curse, restore an equal amount of health",
-    "healthBonus": -3,
+    "healthBonus": 0,
     "attack": 0,
     "armor": 0,
     "speed": 0,
@@ -8053,7 +8009,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r22c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8165,7 +8121,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r54c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8433,7 +8389,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": "Spritesheet_Items_r34c09.png",
+    "image": "Spritesheet_Items_r34c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8451,7 +8407,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r46c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -8510,7 +8466,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r47c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -8549,7 +8505,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r56c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8978,7 +8934,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r55c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -8997,24 +8953,6 @@
     "hasDiamond": false,
     "kingmakerBundle": 2,
     "image": "Spritesheet_Items_r15c05.png",
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
-    "id": "tempest_breastplate",
-    "name": "Old Featherweight Greaves",
-    "rarity": "rare",
-    "description": "Whenever you lose speed, restore that much health",
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9068,7 +9006,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r36c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9234,7 +9172,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r47c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9290,7 +9228,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 0,
-    "image": null,
+    "image": "Spritesheet_Items_r19c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9543,7 +9481,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r38c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9650,7 +9588,7 @@
     "id": "voodoo_doll",
     "name": "Voodoo Doll",
     "rarity": "rare",
-    "description": "Whenever you lose curse, give the enemy that much curse",
+    "description": "Battle Start: Give the enemy 3 curse",
     "healthBonus": 0,
     "attack": 0,
     "armor": 0,
@@ -9659,7 +9597,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9697,7 +9635,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r56c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9795,7 +9733,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r48c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
@@ -9816,7 +9754,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 6,
-    "image": null,
+    "image": "Spritesheet_Items_r61c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -9852,7 +9790,7 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Items_r50c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,

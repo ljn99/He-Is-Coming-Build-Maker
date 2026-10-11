@@ -201,6 +201,8 @@ input[type="text"] {
     margin: 0 auto;
     font-family: "Alkhemikal", sans-serif;
     font-size: 24px;
+    background-color: #e6deca;
+    text-align: center;
 }
 
 .rarity-filter, .tag-filter, .bundle-filter {
@@ -236,9 +238,6 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.bundles {
     padding: 0;
 }
 

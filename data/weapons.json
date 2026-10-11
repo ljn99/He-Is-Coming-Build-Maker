@@ -293,24 +293,6 @@
     ]
   },
   {
-    "id": "questionmark_weapon",
-    "name": "QuestionmarkWeapon",
-    "rarity": "common",
-    "description": null,
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
     "id": "bloodlords_whip",
     "name": "Bloodlord's Whip",
     "rarity": "set",
@@ -648,7 +630,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Weapons_r05c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -690,7 +672,7 @@
     "image": "Spritesheet_Weapons_r00c01.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "perTag", "tag": "jewelry", "stat": "attack", "amount": 2 }
   },
   {
     "id": "blackbriar_blade",
@@ -763,7 +745,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r18c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -801,7 +783,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r03c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -810,7 +792,7 @@
     "id": "bone_hammer",
     "name": "Bonecrush Hammer",
     "rarity": "heroic",
-    "description": "Wounded: Remove all your bone and gain 2 attack for each bone removed",
+    "description": "Wounded: Gain 1 bone for each turn taken this battle",
     "healthBonus": 0,
     "attack": 4,
     "armor": 0,
@@ -819,7 +801,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -858,7 +840,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r03c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -876,7 +858,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r20c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -916,7 +898,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r19c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -998,7 +980,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r07c04.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1016,7 +998,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r99c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1058,7 +1040,7 @@
     "dynamicEffect": null
   },
   {
-    "id": "cleaverof_wrath",
+    "id": "cleaver_of_wrath",
     "name": "Cleaver of Wrath",
     "rarity": "cursed",
     "description": "Your max health is always 1",
@@ -1075,7 +1057,7 @@
     "image": "Spritesheet_Weapons_r03c11.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null,
+    "dynamicEffect": { "type": "setStat", "stat": "health", "value": 1 },
     "rawTags": [
       35
     ]
@@ -1093,7 +1075,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r19c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1113,7 +1095,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r18c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1171,7 +1153,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r13c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1189,7 +1171,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Weapons_r16c06.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1245,7 +1227,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1337,7 +1319,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1373,7 +1355,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r22c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1448,7 +1430,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r25c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1469,26 +1451,6 @@
     "hasDiamond": false,
     "kingmakerBundle": 3,
     "image": "Spritesheet_Weapons_r10c11.png",
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null
-  },
-  {
-    "id": "frostbite_dagger_o_l_d",
-    "name": "Frostbite Dagger OLD",
-    "rarity": "rare",
-    "description": "First turn: Give the enemy freeze equal to your attack on hit",
-    "healthBonus": 0,
-    "attack": 3,
-    "armor": 0,
-    "speed": 0,
-    "tags": [
-      "water"
-    ],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1585,7 +1547,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r19c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1608,7 +1570,7 @@
     "image": "Spritesheet_Weapons_r11c08.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "multiplyBase", "stat": "armor", "factor": 2 }
   },
   {
     "id": "granite_axe",
@@ -1721,7 +1683,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r11c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1759,7 +1721,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r14c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1815,7 +1777,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r23c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1871,7 +1833,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -1930,7 +1892,12 @@
     "image": "Spritesheet_Weapons_r08c07.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": {
+      "type": "multiply",
+      "stat": "attack",
+      "factor": 0.5,
+      "when": { "stat": "speed", "source": "totals", "op": "lte", "value": 0 }
+    }
   },
   {
     "id": "ironstone_greatsword",
@@ -1970,7 +1937,12 @@
     "image": "Spritesheet_Weapons_r14c03.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": {
+      "type": "addIf",
+      "stat": "attack",
+      "amount": 2,
+      "when": { "stat": "armor", "source": "totals", "op": "gt", "value": 0 }
+    }
   },
   {
     "id": "kings_blade",
@@ -2003,7 +1975,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 4,
-    "image": "Spritesheet_Weapons_r14c09.png",
+    "image": "Spritesheet_Weapons_r14c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2023,7 +1995,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Weapons_r04c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2064,7 +2036,7 @@
     "image": "Spritesheet_Weapons_r07c09.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "setStat", "stat": "attack", "value": 7 }
   },
   {
     "id": "lifeblood_spear",
@@ -2101,7 +2073,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r19c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2263,7 +2235,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r22c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2301,7 +2273,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c08.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2359,10 +2331,10 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Weapons_r11c10.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "copyStat", "stat": "attack", "from": "armor", "source": "base" }
   },
   {
     "id": "pacifist_staff",
@@ -2457,7 +2429,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c02.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2493,7 +2465,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r15c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2551,7 +2523,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r12c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2591,7 +2563,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r14c07.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2633,7 +2605,7 @@
     "image": "Spritesheet_Weapons_r00c11.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "setStat", "stat": "attack", "value": 10 }
   },
   {
     "id": "rusty_bonesaw",
@@ -2648,7 +2620,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r22c05.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2747,7 +2719,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r19c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2837,7 +2809,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r25c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2891,7 +2863,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r05c10.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2909,7 +2881,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r24c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -2999,7 +2971,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r25c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3191,10 +3163,10 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 80,
-    "image": null,
+    "image": "Spritesheet_Weapons_r02c09.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "copyStat", "stat": "attack", "from": "speed", "source": "current" }
   },
   {
     "id": "terrorsteel_mace",
@@ -3209,7 +3181,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r21c11.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3245,7 +3217,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r23c00.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3319,7 +3291,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r19c03.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3373,7 +3345,7 @@
     "hasGolden": false,
     "hasDiamond": false,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Weapons_r22c01.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null
@@ -3396,7 +3368,7 @@
     "image": "Spritesheet_Weapons_r03c01.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "perEmptySlot", "stat": "attack", "amount": 2 }
   },
   {
     "id": "wooden_stick",

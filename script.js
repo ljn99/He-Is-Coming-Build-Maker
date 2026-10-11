@@ -17,9 +17,12 @@ const weaponData = "data/weapons.json";
 const weaponImgPath = "assets/weapons/";
 const itemData = "data/items.json";
 const itemImgPath = "assets/items/";
+const edgeData = "data/edges.json";
+const edgeImgPath = "assets/edges/";
 
 let allWeapons = [];
 let allItems = [];
+let allEdges = [];
 
 let selectedIndex = null;
 
@@ -143,6 +146,18 @@ function handleWeaponClick() {
     
 };
 
+function conditionMet(when, totals, base) {
+    const source = when.source === "base" ? base:totals;
+    switch (when.op) {
+        case "gt": {
+            return source[when.stat] > when.value;
+        }
+        case "lte": {
+            return source[when.stat] <= when.value;
+        }
+    }
+}
+
 function calculateStats() {
     const totals = { health: 10, attack: 0, armor: 0, speed: 0 };
 
@@ -171,6 +186,69 @@ function calculateStats() {
     if (build.oils.speed) {
         totals.speed += 1;
     }
+
+    const base = {...totals};
+    const pieces = [build.weapon, ...build.items].filter(piece => piece);
+
+    /* Calculation Pass #2 */
+    pieces.forEach(piece => {
+        if (!piece.dynamicEffect) {
+            return;
+        }
+        const effect = piece.dynamicEffect;
+        switch (effect.type) {
+            case "perTag": {
+                const count = pieces.filter(other => other.tags.includes(effect.tag)).length;
+                totals[effect.stat] += effect.amount * count;
+                break;
+            }
+            case "perEmptySlot": {
+                const emptySlotCount = build.items.filter(slot => slot === null).length;
+                totals[effect.stat] += effect.amount * emptySlotCount;
+                break;
+            }
+            case "addIf": {
+                if (conditionMet(effect.when, totals, base)) {
+                    totals[effect.stat] += effect.amount;
+                }
+                break;
+            }
+            case "multiply": {
+                if (!effect.when || conditionMet(effect.when, totals, base)) {
+                    totals[effect.stat] = Math.floor(totals[effect.stat] * effect.factor);
+                }
+                break;
+            }
+            case "multiplyBase": {
+                totals[effect.stat] += base[effect.stat] * (effect.factor - 1);
+                break;
+            }
+            case "doubleOwnBonus": {
+                if (conditionMet(effect.when, totals, base)) {
+                    totals[effect.stat] += piece[effect.field];
+                    break;
+                }
+            }
+        }
+    });
+
+    /* Calculation Pass #3 */
+    pieces.forEach(piece => {
+        if (!piece.dynamicEffect) {
+            return;
+        }
+        const effect = piece.dynamicEffect;
+        switch (effect.type) {
+            case "setStat":
+                totals[effect.stat] = effect.value;
+                break;
+            case "copyStat": {
+                const source = effect.source === "base" ? base:totals;
+                totals[effect.stat] = source[effect.from];
+                break;
+            }
+        }
+    });
 
     return totals;
 };
@@ -250,7 +328,8 @@ function renderItemGrid() {
 
     const groups = [
         { list: allWeapons, imageFolder: weaponImgPath, category: "weapon" },
-        { list: allItems, imageFolder: itemImgPath, category: "item" }
+        { list: allItems, imageFolder: itemImgPath, category: "item" },
+        { list: allEdges, imageFolder: edgeImgPath, category: "edge"}
     ];
 
     groups.forEach(group => {
@@ -364,5 +443,6 @@ document.querySelector("#item-search").addEventListener("input", () => renderIte
 
 loadItems(weaponData, data => { allWeapons = data; });
 loadItems(itemData, data => { allItems = data; });
+loadItems(edgeData, data => { allEdges = data; });
 
 renderBuild();
