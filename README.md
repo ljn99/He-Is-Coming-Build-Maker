@@ -5,6 +5,7 @@ A free, fan-made build planner for the auto-battler **He Is Coming**. Pick a wea
 It's plain HTML, CSS and JavaScript. There is nothing to install and no build step.
 
 > **Unofficial.** This project is not affiliated with, endorsed by, or connected to the developers or publisher of He Is Coming. It is free and non-commercial. See [Disclaimer](#disclaimer).
+![Screenshot of the He Is Coming Build Planner](screenshot.png)
 
 ## Features
 
