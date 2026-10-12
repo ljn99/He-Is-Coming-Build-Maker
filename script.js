@@ -1,8 +1,9 @@
 const build = {
     weapon: null,
+    edge: null,
     weaponStacks: 1,
     oils: {attack: true, armor: true, speed: true},
-    items: [null, null, null, null]
+    items: Array(12).fill(null)
 };
 
 const rarityIcons = {
@@ -10,8 +11,74 @@ const rarityIcons = {
   rare: "assets/icons/rarity_rare.png",
   heroic: "assets/icons/rarity_heroic.png",
   mythic: "assets/icons/rarity_mythic.png",
-  cursed: "assets/icons/rarity_cursed.png"
+  cursed: "assets/icons/rarity_cursed.png",
+  set: "assets/icons/rarity_itemset.png",
+  cauldron: "assets/icons/rarity_cauldron.png",
+  gold: "assets/icons/rarity_gold.png",
+  diamond: "assets/icons/rarity_diamond.png"
 };
+
+const stackImages = {
+  hidden_dagger: {
+    2: "Spritesheet_Weapons_r03c05.png",
+    3: "Spritesheet_Weapons_r03c06.png",
+    4: "Spritesheet_Weapons_r03c07.png"
+  }
+};
+
+const weaponComponents = {
+    bloodlords_whip: ["bloodthief_axe", "leather_whip"],
+    brittlebark_blade: ["brittlebark_club", "brittlebark_bow"],
+    gale_bow: ["gale_staff", "swiftstrike_rapier"],
+    heatstroke_scepter: ["heatstroke_trident", "heatstroke_dagger"],
+    liferoot_dagger: ["liferoot_staff", "bloodmoon_dagger"],
+    pacifist_trident: ["pacifist_staff", "silverscale_trident"],
+    perfect_iceblade: ["frozen_iceblade", "melting_iceblade"],
+    razorthorn_lance: ["razorthorn_spear", "boom_stick"],
+    spear_of_the_hero: ["quickgrowth_spear", "swordofthe_hero"],
+    stonesnake_sword: ["serpent_dagger", "stoneslab_sword"],
+    twin_saws: ["twin_spear", "rusty_bonesaw"]
+};
+
+const rarityOrder = ["common", "rare", "heroic", "mythic", "cursed", "cauldron"];
+const categoryOrder = ["weapon", "item", "edge"];
+
+function rarityRank(rarity) {
+    const index = rarityOrder.indexOf(rarity);
+    return index === -1 ? rarityOrder.length : index;
+}
+
+const goldImgPath = "assets/items/Spritesheet_Items_golden/";
+const diamondImgPath = "assets/items/Spritesheet_Items_diamond/";
+const tierNames = ["", "Golden ", "Diamond "];
+
+function getDefaultWeapon() {
+    return allWeapons.find(weapon => weapon.id === "wooden_stick") || null;
+}
+
+function itemImageFolder(item) {
+    if (item.tier === 1) {
+        return goldImgPath;
+    }
+    if (item.tier === 2) {
+        return diamondImgPath;
+    }
+    return itemImgPath;
+}
+
+function makeTier(item, tier) {
+    const multiplier = 2 ** tier;
+    return {
+        ...item,
+        tier: tier,
+        healthBonus: item.healthBonus * multiplier,
+        attack: item.attack * multiplier,
+        armor: item.armor * multiplier,
+        speed: item.speed * multiplier,
+        image: tier === 1 ? item.goldImage : item.diamondImage,
+        description: (tier === 1 ? item.goldDescription : item.diamondDescription) || item.description
+    };
+}
 
 const weaponData = "data/weapons.json";
 const weaponImgPath = "assets/weapons/";
@@ -19,10 +86,13 @@ const itemData = "data/items.json";
 const itemImgPath = "assets/items/";
 const edgeData = "data/edges.json";
 const edgeImgPath = "assets/edges/";
+const setData = "data/sets.json";
+const setImgPath = "assets/sets/";
 
 let allWeapons = [];
 let allItems = [];
 let allEdges = [];
+let allSets = [];
 
 let selectedIndex = null;
 
@@ -35,49 +105,106 @@ function loadItems(jsonPath, callback) {
         });
 };
 
-function buildTooltipText(item) {
-    let text = item.name;
+const statIcons = {
+    health: "assets/icons/icon_health.png",
+    attack: "assets/icons/icon_attack.png",
+    armor: "assets/icons/icon_armor.png",
+    speed: "assets/icons/icon_speed.png"
+};
 
-    if (item.description !== null) {
-        text = text + "\n" + item.description;
-    }
+function buildTooltipContent(item) {
+    const box = document.createElement("div");
 
-    if (item.attack !== 0) {
-    text = text + "\nAttack: " + item.attack;
-    }
-    if (item.armor !== 0) {
-        text = text + "\nArmor: " + item.armor;
-    }
-    if (item.speed !== 0) {
-        text = text + "\nSpeed: " + item.speed;
-    }
-    if (item.healthBonus !== 0) {
-        text = text + "\nHealth: " + item.healthBonus;
-    }
+    const name = document.createElement("div");
+    name.classList.add("tooltip-name");
+    name.textContent = tierNames[item.tier || 0] + item.name;
+    box.appendChild(name);
 
-    if (item.tags.length > 0) {
-        text = text + "\nTags: " + item.tags.join(", ");
+    if (item.description) {
+        const desc = document.createElement("div");
+        desc.classList.add("tooltip-desc");
+        desc.textContent = item.description;
+        box.appendChild(desc);
     }
 
-    return text;
+    const stats = [
+        { stat: "health", value: item.healthBonus },
+        { stat: "attack", value: item.attack },
+        { stat: "armor", value: item.armor },
+        { stat: "speed", value: item.speed }
+    ];
+
+    stats.forEach(entry => {
+        if (!entry.value) {
+            return;
+        }
+
+        const row = document.createElement("div");
+        row.classList.add("tooltip-stat");
+
+        const icon = document.createElement("img");
+        icon.src = statIcons[entry.stat];
+        icon.alt = entry.stat;
+
+        const number = document.createElement("span");
+        number.textContent = entry.value;
+
+        row.appendChild(icon);
+        row.appendChild(number);
+        box.appendChild(row);
+    });
+
+    if (item.tags && item.tags.length > 0) {
+        const tagRow = document.createElement("div");
+        tagRow.classList.add("tooltip-tags");
+
+        item.tags.forEach(tag => {
+            const chip = document.createElement("span");
+            chip.classList.add("tag-chip");
+            chip.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+            tagRow.appendChild(chip);
+        });
+
+        box.appendChild(tagRow);
+    }
+
+    return box;
 }
 
 function renderBuild() {
+    document.getElementById("tooltip").style.display = "none";
+
     const weaponSlot = document.querySelector(".weapon-slot");
     weaponSlot.innerHTML = "";
 
     if (build.weapon !== null) {
-        const img = document.createElement("img");
-        img.src = "assets/weapons/" + build.weapon.image;
-        img.alt = build.weapon.name;
-        weaponSlot.appendChild(createItemVisual(build.weapon, "assets/weapons/"));
+        let shownWeapon = build.weapon;
+        const altImages = stackImages[build.weapon.id];
+        const altImage = altImages && altImages[build.weaponStacks];
 
-        if (build.weaponStacks > 1) {
+        if (altImage) {
+            shownWeapon = { ...build.weapon, image: altImage };
+        }
+
+        const weaponVisual = createItemVisual(shownWeapon, weaponImgPath, "weapon");
+        attachTooltip(weaponVisual, build.weapon);
+        weaponSlot.appendChild(weaponVisual);
+
+        if (build.weaponStacks > 1 && !altImage) {
             const stackLabel = document.createElement("div");
             stackLabel.textContent = "x" + build.weaponStacks;
             stackLabel.classList.add("stack-count");
-            weaponSlot.appendChild(createItemVisual(build.weapon, "assets/weapons/", "weapon"));
+            weaponSlot.appendChild(stackLabel);
         }
+    }
+
+    const edgeSlot = document.querySelector(".edge-slot");
+    edgeSlot.innerHTML = "";
+
+    if (build.edge !== null) {
+        const edgeVisual = createItemVisual(build.edge, edgeImgPath, "edge");
+        attachTooltip(edgeVisual, build.edge);
+        edgeSlot.appendChild(edgeVisual);
     }
 
     const itemSlotElements = document.querySelectorAll(".item-slot-build");
@@ -87,10 +214,9 @@ function renderBuild() {
         slotElement.innerHTML = "";
 
         if (item !== null) {
-            const img = document.createElement("img");
-            img.src = "assets/items/" + item.image;
-            img.alt = item.name;
-            slotElement.appendChild(img);
+            const itemVisual = createItemVisual(item, itemImageFolder(item), "item");
+            attachTooltip(itemVisual, item);
+            slotElement.appendChild(itemVisual);
         }
 
         if (index === selectedIndex) {
@@ -98,6 +224,20 @@ function renderBuild() {
         } else {
             slotElement.classList.remove("selected");
         }
+    });
+
+    const setColumn = document.querySelector(".set-column");
+    setColumn.innerHTML = "";
+
+    getActiveSets().forEach(set => {
+        const setBox = document.createElement("div");
+        setBox.classList.add("item-slot", "set-slot");
+
+        const setVisual = createItemVisual(set, setImgPath, "set");
+        attachTooltip(setVisual, set);
+
+        setBox.appendChild(setVisual);
+        setColumn.appendChild(setBox);
     });
 
     const stats = calculateStats();
@@ -136,14 +276,9 @@ function handleSlotClick(index) {
 };
 
 function handleWeaponClick() {
-    if (build.weapon === null) {
-        return;
-    }
-    
-    build.weapon = null;
+    build.weapon = getDefaultWeapon();
     build.weaponStacks = 1;
     renderBuild();
-    
 };
 
 function conditionMet(when, totals, base) {
@@ -158,22 +293,28 @@ function conditionMet(when, totals, base) {
     }
 }
 
+function countedStat(value, ignoreNegatives) {
+    return ignoreNegatives ? Math.max(0, value) : value;
+}
+
 function calculateStats() {
     const totals = { health: 10, attack: 0, armor: 0, speed: 0 };
+    const activeSets = getActiveSets();
+    const ignoreNegatives = activeSets.some(set => set.dynamicEffect && set.dynamicEffect.type === "ignoreNegatives");
 
     if (build.weapon !== null) {
-        totals.health += build.weapon.healthBonus;
-        totals.attack += build.weapon.attack * build.weaponStacks;
-        totals.armor += build.weapon.armor;
-        totals.speed += build.weapon.speed;
+        totals.health += countedStat(build.weapon.healthBonus, ignoreNegatives);
+        totals.attack += countedStat(build.weapon.attack, ignoreNegatives) * build.weaponStacks;
+        totals.armor += countedStat(build.weapon.armor, ignoreNegatives);
+        totals.speed += countedStat(build.weapon.speed, ignoreNegatives);
     };
 
     build.items.forEach(item => {
         if (item !== null) {
-            totals.health += item.healthBonus;
-            totals.attack += item.attack;
-            totals.armor += item.armor;
-            totals.speed += item.speed;
+            totals.health += countedStat(item.healthBonus, ignoreNegatives);
+            totals.attack += countedStat(item.attack, ignoreNegatives);
+            totals.armor += countedStat(item.armor, ignoreNegatives);
+            totals.speed += countedStat(item.speed, ignoreNegatives);
         }
     });
 
@@ -187,8 +328,15 @@ function calculateStats() {
         totals.speed += 1;
     }
 
+    activeSets.forEach(set => {
+        totals.health += set.healthBonus;
+        totals.attack += set.attack;
+        totals.armor += set.armor;
+        totals.speed += set.speed;
+    })
+
     const base = {...totals};
-    const pieces = [build.weapon, ...build.items].filter(piece => piece);
+    const pieces = [build.weapon, build.edge, ...build.items, ...activeSets].filter(piece => piece);
 
     /* Calculation Pass #2 */
     pieces.forEach(piece => {
@@ -221,6 +369,10 @@ function calculateStats() {
             }
             case "multiplyBase": {
                 totals[effect.stat] += base[effect.stat] * (effect.factor - 1);
+                break;
+            }
+            case "negate": {
+                totals[effect.stat] = -totals[effect.stat];
                 break;
             }
             case "doubleOwnBonus": {
@@ -258,6 +410,11 @@ function handleOilClick(statName) {
     renderBuild()
 };
 
+function handleEdgeClick() {
+    build.edge = null;
+    renderBuild()
+}
+
 function createItemVisual(item, imageFolder, category) {
     const wrapper = document.createElement("div");
     wrapper.classList.add("item-visual");
@@ -273,10 +430,22 @@ function createItemVisual(item, imageFolder, category) {
         wrapper.appendChild(corner);
     }
 
-    const rarityBadge = document.createElement("div");
-    rarityBadge.classList.add("rarity-icon");
-    rarityBadge.style.backgroundImage = "url('" + rarityIcons[item.rarity] + "')";
-    wrapper.appendChild(rarityBadge);
+    let iconKey = item.rarity;
+    if (category === "set") {
+        iconKey = "set";
+    }
+    if (item.tier === 1) {
+        iconKey = "gold";
+    }
+    if (item.tier === 2) {
+        iconKey = "diamond";
+    }
+    if (rarityIcons[iconKey]) {
+        const rarityBadge = document.createElement("div");
+        rarityBadge.classList.add("rarity-icon");
+        rarityBadge.style.backgroundImage = "url('" + rarityIcons[iconKey] + "')";
+        wrapper.appendChild(rarityBadge);
+    }
 
     return wrapper;
 }
@@ -317,6 +486,25 @@ function getBundleFilters() {
     return bundleFilters;
 };
 
+function attachTooltip(element, item) {
+    const tooltip = document.getElementById("tooltip");
+
+    element.addEventListener("mouseenter", () => {
+        tooltip.style.display = "block";
+        tooltip.innerHTML = "";
+        tooltip.appendChild(buildTooltipContent(item));
+    });
+
+    element.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+    });
+
+    element.addEventListener("mousemove", (event) => {
+        tooltip.style.left = event.pageX + 10 + "px";
+        tooltip.style.top = event.pageY + 10 + "px";
+    });
+}
+
 function renderItemGrid() {
     const grid = document.querySelector(".item-grid");
     grid.innerHTML = "";
@@ -332,61 +520,79 @@ function renderItemGrid() {
         { list: allEdges, imageFolder: edgeImgPath, category: "edge"}
     ];
 
+    const entries = [];
     groups.forEach(group => {
         group.list.forEach(item => {
-            if (!passesFilters(item, rarityFilters, tagFilters, bundleFilters, searchFilter)) {
-                return;
+            if (passesFilters(item, rarityFilters, tagFilters, bundleFilters, searchFilter)) {
+                entries.push({ item: item, group: group });
             }
-
-            const box = document.createElement("div");
-            box.classList.add("item-slot");
-            if (group.category === "weapon") {
-                box.classList.add("weapon-item-slot");
-            }
-
-            const tooltip = document.getElementById("tooltip");
-
-            box.addEventListener("mouseenter", () => {
-                tooltip.style.display = "block";
-                tooltip.innerHTML = buildTooltipText(item).replaceAll("\n", "<br>");
-            });
-
-            box.addEventListener("mouseleave", () => {
-                tooltip.style.display = "none";
-            });
-
-            box.addEventListener("mousemove", (event) => {
-                tooltip.style.left = event.pageX + 10 + "px";
-                tooltip.style.top = event.pageY + 10 + "px";
-            });
-
-            box.addEventListener("click", () => {
-                if (group.category === "weapon") {
-                    const isSameStackableWeapon =
-                        build.weapon !== null &&
-                        build.weapon.id === item.id &&
-                        item.stackable &&
-                        build.weaponStacks < item.maxStacks;
-
-                    if (isSameStackableWeapon) {
-                        build.weaponStacks += 1;
-                    } else {
-                        build.weapon = item;
-                        build.weaponStacks = 1;
-                    }
-                } else {
-                    const emptyIndex = build.items.indexOf(null);
-                    if (emptyIndex !== -1) {
-                        build.items[emptyIndex] = item;
-                    }
-                }
-
-                renderBuild();
-            });
-
-            box.appendChild(createItemVisual(item, group.imageFolder, group.category));
-            grid.appendChild(box);
         });
+    });
+
+    entries.sort((a, b) => {
+        const rarityDiff = rarityRank(a.item.rarity) - rarityRank(b.item.rarity);
+        if (rarityDiff !== 0) {
+            return rarityDiff;
+        }
+
+        const categoryDiff = categoryOrder.indexOf(a.group.category) - categoryOrder.indexOf(b.group.category);
+        if (categoryDiff !== 0) {
+            return categoryDiff;
+        }
+
+        return a.item.name.localeCompare(b.item.name);
+    });
+
+    entries.forEach(entry => {
+        const item = entry.item;
+        const group = entry.group;
+
+        const box = document.createElement("div");
+        box.classList.add("item-slot");
+        if (group.category === "weapon") {
+            box.classList.add("weapon-item-slot");
+        }
+
+        attachTooltip(box, item);
+
+        box.addEventListener("click", (event) => {
+            if (group.category === "weapon") {
+                const isSameStackableWeapon =
+                    build.weapon !== null &&
+                    build.weapon.id === item.id &&
+                    item.stackable &&
+                    build.weaponStacks < item.maxStacks;
+
+                if (isSameStackableWeapon) {
+                    build.weaponStacks += 1;
+                }
+                else {
+                    build.weapon = item;
+                    build.weaponStacks = 1;
+                }
+            }
+            else if (group.category === "edge") {
+                build.edge = item;
+            }
+            else {
+                const emptyIndex = build.items.indexOf(null);
+                if (emptyIndex !== -1) {
+                    let tier = 0;
+                    if (item.goldImage && event.shiftKey) {
+                        tier = 1;
+                    }
+                    if (item.goldImage && (event.ctrlKey || event.metaKey)) {
+                        tier = 2;
+                    }
+                    build.items[emptyIndex] = tier === 0 ? item : makeTier(item, tier);
+                }
+            }
+
+            renderBuild();
+        });
+
+        box.appendChild(createItemVisual(item, group.imageFolder, group.category));
+        grid.appendChild(box);
     });
 }
 
@@ -415,6 +621,47 @@ function getSearchText() {
     return document.querySelector("#item-search").value.toLowerCase();
 }
 
+function countOwned(name, owned) {
+    if (name.startsWith("generic_")) {
+        const tag = name.slice("generic_".length);
+        return owned.filter(piece => piece.tags.includes(tag)).length;
+    }
+    return owned.filter(piece => piece.id === name).length;
+}
+
+function getOwnedPieces() {
+    const owned = [build.weapon, build.edge, ...build.items].filter(piece => piece);
+
+    if (build.weapon && weaponComponents[build.weapon.id]) {
+        weaponComponents[build.weapon.id].forEach(componentId => {
+            owned.push({ id: componentId, tags: [] });
+        });
+    }
+
+    return owned;
+}
+
+function getActiveSets() {
+    const owned = getOwnedPieces();
+
+    return allSets.filter(set => {
+        if (set.components.length === 0) {
+            return false;
+        }
+        return set.components.every(name => {
+            const needed = set.components.filter(other => other === name).length;
+            return countOwned(name, owned) >= needed;
+        });
+    });
+}
+
+const itemSlotsContainer = document.querySelector(".item-slots")
+for (let i = 0; i < build.items.length; i++) {
+    const el = document.createElement("div");
+    el.classList.add("item-slot", "item-slot-build");
+    itemSlotsContainer.appendChild(el)
+}
+
 const itemSlotElements = document.querySelectorAll(".item-slot-build");
 itemSlotElements.forEach((slotElement, index) => {
     slotElement.addEventListener("click", () => handleSlotClick(index));
@@ -422,6 +669,9 @@ itemSlotElements.forEach((slotElement, index) => {
 
 const weaponSlotElement = document.querySelector(".weapon-slot");
 weaponSlotElement.addEventListener("click", () => handleWeaponClick());
+
+const edgeSlotElement = document.querySelector(".edge-slot");
+edgeSlotElement.addEventListener("click", handleEdgeClick)
 
 document.querySelectorAll(".oil-toggle").forEach(el => {
     el.addEventListener("click", () => handleOilClick(el.dataset.stat));
@@ -441,8 +691,13 @@ document.querySelectorAll(".bundle-filter").forEach(el => {
 
 document.querySelector("#item-search").addEventListener("input", () => renderItemGrid());
 
-loadItems(weaponData, data => { allWeapons = data; });
+loadItems(weaponData, data => {
+    allWeapons = data;
+    build.weapon = getDefaultWeapon();
+    renderBuild();
+});
 loadItems(itemData, data => { allItems = data; });
 loadItems(edgeData, data => { allEdges = data; });
+loadItems(setData, data => { allSets = data; });
 
 renderBuild();

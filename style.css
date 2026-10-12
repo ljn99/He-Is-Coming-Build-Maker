@@ -8,6 +8,7 @@
     --border-weapon: url("assets/misc/box_red_border.png");
     --background-color: #25131a;
     --icon-weapon-corner: url("assets/icons/small_sword_corner.png");
+    --border-selected: url("assets/misc/box_basic_selected.png");
 }
 
 * {
@@ -25,6 +26,8 @@ body {
     font-family: "Alkhemikal", sans-serif;
     color: #e6deca;
     background-color: var(--background-color);
+    margin: 0;
+    overflow: hidden;
 }
 
 .build-area {
@@ -35,14 +38,14 @@ body {
 }
 
 .item-slots {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px;
 }
 
 .item-slot {
-    width: 64px;
-    height: 64px;
+    width: 72px;
+    height: 72px;
     border: 9px solid transparent;
     border-image-source: var(--border-basic);
     border-image-slice: 3;
@@ -58,7 +61,14 @@ body {
 }
 
 .item-slot-build.selected {
-    border-color: yellow;
+    width: 72px;
+    height: 72px;
+    border: 9px solid transparent;
+    border-image-source: var(--border-selected);
+    border-image-slice: 3;
+    border-image-width: 9px;
+    border-image-repeat: stretch;
+    image-rendering: pixelated;
 }
 
 .item-slot, .item-visual {
@@ -69,6 +79,12 @@ body {
     border-image-source: var(--border-weapon);
 }
 
+.weapon-area {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
 .weapon-slot {
     width: 120px;
     height: 120px;
@@ -77,6 +93,20 @@ body {
     border-image-source: var(--border-weapon);
     border-image-slice: 3;
     border-image-width: 9px;
+    border-image-repeat: stretch;
+    image-rendering: pixelated;
+}
+
+.edge-slot {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border: 4px solid transparent;
+    border-image-source: var(--border-basic);
+    border-image-slice: 3;
+    border-image-width: 4px;
     border-image-repeat: stretch;
     image-rendering: pixelated;
 }
@@ -148,6 +178,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 8px;
+    align-items: flex-end;
 }
 
 .stat-box {
@@ -155,14 +186,19 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  border: 9px solid transparent;
+  border: 8px solid transparent;
   border-image-source: var(--border-basic);
   border-image-slice: 3;
-  border-image-width: 9px;
+  border-image-width: 8px;
   border-image-repeat: stretch;
   image-rendering: pixelated;
   padding: 4px 8px;
 }
+
+/* .build-stats {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+} */
 
 .stat-icon {
   width: 20px;
@@ -176,11 +212,34 @@ body {
     text-align: right;
 }
 
+.build-panel {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 0;
+}
+
+.item-slots-wrap {
+    position: relative;
+}
+
+.set-column {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .item-picker {
     display: flex;
     flex-direction: row;
     flex: 1 1 0;
-    align-items: flex-start;
+    height: 100vh;
+    min-width: 0;
 }
 
 .item-grid {
@@ -190,10 +249,16 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     align-content: flex-start;
+    overflow-y: auto;
+    height: 100%;
+    scrollbar-width: none;
+    user-select: none;
 }
 
 .item-filter {
     flex: 1 1 0;
+    height: 100%;
+    overflow-y: auto;
 }
 
 input[type="text"] {
@@ -254,4 +319,66 @@ ul {
     border-image-width: 9px;
     border-image-repeat: stretch;
     image-rendering: pixelated;
+}
+
+.controls-help {
+    margin: 12px 8px 0;
+    padding: 4px 8px;
+    border: 9px solid transparent;
+    border-image-source: var(--border-basic);
+    border-image-slice: 3;
+    border-image-width: 9px;
+    border-image-repeat: stretch;
+    image-rendering: pixelated;
+    font-size: 18px;
+}
+
+.controls-help p {
+    margin: 4px 0;
+}
+
+.tooltip {
+    max-width: 320px;
+    text-align: center;
+    padding: 12px;
+}
+
+.tooltip-name {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.tooltip-desc {
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.tooltip-stat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+}
+
+.tooltip-stat img {
+    width: 20px;
+    height: 20px;
+    image-rendering: pixelated;
+}
+
+.tooltip-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag-chip {
+    background-color: #e6deca;
+    color: #25131a;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 4px 2px 0;
+    font-size: 20px;
 }

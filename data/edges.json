@@ -380,7 +380,7 @@
     "image": "Spritesheet_Weapons_r15c10.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null
+    "dynamicEffect": { "type": "multiply", "stat": "attack", "factor": 2 }
   },
   {
     "id": "phoenix_edge",

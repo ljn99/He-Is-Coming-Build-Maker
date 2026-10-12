@@ -5,45 +5,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="build-area">
-        <div class="weapon-slot">
+    <div class="build-panel"></div>
+        <div class="build-area">
+            <div class="weapon-area">
+                <div class="weapon-slot">
+
+                </div>
+                <div class="edge-slot">
+
+                </div>
+            </div>
+            
+            <div class="weapon-oils">
+
+                <img class="oil-toggle" data-stat="attack" src="assets/icons/atk_oil.png" alt="Attack Oil">
+                <img class="oil-toggle" data-stat="armor" src="assets/icons/arm_oil.png" alt="Armor Oil">
+                <img class="oil-toggle" data-stat="speed" src="assets/icons/spd_oil.png" alt="Speed Oil">
+            
+            </div>
+            <div class="item-slots-wrap">
+                <div class="item-slots"></div>
+                <div class="set-column"></div>
+            </div>
+
+            <div class="build-stats">
+            <div class="stat-box">
+                <img class="stat-icon" src="assets/icons/icon_health.png" alt="Health">
+                <span class="stat-value" id="stat-health"></span>
+            </div>
+            <div class="stat-box">
+                <img class="stat-icon" src="assets/icons/icon_attack.png" alt="Attack">
+                <span class="stat-value" id="stat-attack"></span>
+            </div>
+            <div class="stat-box">
+                <img class="stat-icon" src="assets/icons/icon_armor.png" alt="Armor">
+                <span class="stat-value" id="stat-armor"></span>
+            </div>
+            <div class="stat-box">
+                <img class="stat-icon" src="assets/icons/icon_speed.png" alt="Speed">
+                <span class="stat-value" id="stat-speed"></span>
+            </div>
+            </div>
 
         </div>
-        
-        <div class="weapon-oils">
-
-            <img class="oil-toggle" data-stat="attack" src="assets/icons/atk_oil.png" alt="Attack Oil">
-            <img class="oil-toggle" data-stat="armor" src="assets/icons/arm_oil.png" alt="Armor Oil">
-            <img class="oil-toggle" data-stat="speed" src="assets/icons/spd_oil.png" alt="Speed Oil">
-        
-        </div>
-
-        <div class="item-slots">
-            <div class="item-slot item-slot-build"></div>
-            <div class="item-slot item-slot-build"></div>
-            <div class="item-slot item-slot-build"></div>
-            <div class="item-slot item-slot-build"></div>
-        </div>
-
-        <div class="build-stats">
-        <div class="stat-box">
-            <img class="stat-icon" src="assets/icons/icon_health.png" alt="Health">
-            <span class="stat-value" id="stat-health"></span>
-        </div>
-        <div class="stat-box">
-            <img class="stat-icon" src="assets/icons/icon_attack.png" alt="Attack">
-            <span class="stat-value" id="stat-attack"></span>
-        </div>
-        <div class="stat-box">
-            <img class="stat-icon" src="assets/icons/icon_armor.png" alt="Armor">
-            <span class="stat-value" id="stat-armor"></span>
-        </div>
-        <div class="stat-box">
-            <img class="stat-icon" src="assets/icons/icon_speed.png" alt="Speed">
-            <span class="stat-value" id="stat-speed"></span>
-        </div>
-        </div>
-
     </div>
 
     <div class="item-picker">
@@ -88,6 +92,12 @@
                 <li><label for="tag-instrument"><input type="checkbox" id="tag-instrument" class="tag-filter" value="instrument">Instrument</label></li>
                 <li><label for="tag-potion"><input type="checkbox" id="tag-potion" class="tag-filter" value="potion">Potion</label></li>
             </ul>
+            <div class="controls-help">
+                <p><strong>Click</strong> an item to add it</p>
+                <p><strong>Shift + Click</strong> adds the Golden version</p>
+                <p><strong>Ctrl + Click</strong> adds the Diamond version</p>
+                <p>In your build, click an item to select it, then click another slot to swap or the same item again to remove it. Click your weapon or edge to remove it.</p>
+            </div>
         </div>
 
     </div>
