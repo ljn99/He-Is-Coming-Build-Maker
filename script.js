@@ -98,7 +98,8 @@ let allSets = [];
 let selectedIndex = null;
 
 function loadItems(jsonPath, callback) {
-    return fetch(jsonPath)
+    // ?v=... makes browsers fetch fresh data after an update (bump it with the ones in index.html)
+    return fetch(jsonPath + "?v=3")
         .then(response => response.json())
         .then(data => {
             callback(data);

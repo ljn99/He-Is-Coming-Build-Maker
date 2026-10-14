@@ -63,7 +63,7 @@ function makeBank(entries, maxShift) {
 
 function loadSpriteBanks() {
     if (!spriteBanksPromise) {
-        spriteBanksPromise = fetch(SPRITE_MASKS_URL)
+        spriteBanksPromise = fetch(SPRITE_MASKS_URL + "?v=3")
             .then(response => response.json())
             .then(list => {
                 const entries = list.map(([kind, id, tier, hex]) => ({ kind, id, tier, mask: hexToMask(hex) }));
