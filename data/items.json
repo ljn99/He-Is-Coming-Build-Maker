@@ -196,7 +196,7 @@
   {
     "id": "candied_nuts",
     "name": "Candied Nuts",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Your thorns deal double damage",
     "healthBonus": 0,
     "attack": 0,
@@ -273,7 +273,7 @@
   {
     "id": "creme_brulee",
     "name": "Cr\u00e8me Br\u00fbl\u00e9e",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Your base armor is doubled",
     "healthBonus": 0,
     "attack": 0,
@@ -516,7 +516,7 @@
   {
     "id": "honey_ham",
     "name": "Honey Ham",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Double your max health",
     "healthBonus": 0,
     "attack": 0,
@@ -531,7 +531,7 @@
     "image": "Spritesheet_Items_r17c08.png",
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null,
+    "dynamicEffect": { "type": "multiply", "stat": "health", "factor": 2 },
     "regionBundles": [
       1
     ],
@@ -542,7 +542,7 @@
   {
     "id": "honey_caviar",
     "name": "Honey Caviar",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Exposed: Give the enemy 10 riptide",
     "healthBonus": 0,
     "attack": 0,
@@ -568,7 +568,7 @@
   {
     "id": "honeydew_melon",
     "name": "Honeydew Melon",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Battle Start: Give all your status effects to the enemy",
     "healthBonus": 0,
     "attack": 0,
@@ -594,7 +594,7 @@
   {
     "id": "honeyglazed_shroom",
     "name": "Honey-glazed Shroom",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Turn Start: Give the enemy 2 poison",
     "healthBonus": 0,
     "attack": 4,
@@ -668,7 +668,7 @@
   {
     "id": "lemon_syrup",
     "name": "Lemon Syrup",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Battle Start: Double your speed",
     "healthBonus": 0,
     "attack": 0,
@@ -1151,7 +1151,7 @@
   {
     "id": "pumpkin_pie",
     "name": "Pumpkin Pie",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Battle Start: Steal all attack from the enemy",
     "healthBonus": 0,
     "attack": 0,
@@ -1222,7 +1222,7 @@
   {
     "id": "rock_candy",
     "name": "Rock Candy",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Battle Start: Gain 20 armor. If your health is full, gain 50 armor instead",
     "healthBonus": 0,
     "attack": 0,
@@ -1464,7 +1464,7 @@
   {
     "id": "sugar_bomb",
     "name": "Sugar Bomb",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Turn Start: Deal 1 damage 3 times",
     "healthBonus": 0,
     "attack": 0,
@@ -1515,7 +1515,7 @@
   {
     "id": "sweet_wine",
     "name": "Honey Mead",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "Wounded: Restore health to full and restore 1 health at Turn Start for the rest of battle",
     "healthBonus": 0,
     "attack": 0,
@@ -6144,6 +6144,8 @@
     "name": "Marble Ring",
     "rarity": "common",
     "description": "Battle Start: Gain 3 armor",
+    "goldDescription": "Battle Start: Gain 6 armor",
+    "diamondDescription": "Battle Start: Gain 12 armor",
     "healthBonus": 0,
     "attack": 0,
     "armor": 0,
@@ -6155,7 +6157,9 @@
     "hasGolden": true,
     "hasDiamond": true,
     "kingmakerBundle": 7,
-    "image": null,
+    "image": "Spritesheet_Items_r30c02.png",
+    "goldImage": "Spritesheet_Items_golden_r09c09.png",
+    "diamondImage": "Spritesheet_Items_diamond_r09c09.png",
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null

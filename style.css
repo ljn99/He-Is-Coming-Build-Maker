@@ -37,6 +37,7 @@ body {
     gap: 12px;
     max-height: 100vh;
     overflow-y: auto;
+    scrollbar-width: none;
 }
 
 .item-slots {
@@ -261,6 +262,7 @@ body {
     flex: 1 1 0;
     height: 100%;
     overflow-y: auto;
+    scrollbar-width: none;
 }
 
 input[type="text"] {
@@ -432,4 +434,50 @@ ul {
 #save-status {
     min-width: 120px;
     font-size: 18px;
+}
+
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+.music-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.music-player select,
+.music-player button {
+    font-family: "Alkhemikal", sans-serif;
+    font-size: 20px;
+    background-color: #e6deca;
+    color: #25131a;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+.music-player select {
+    max-width: 100%;
+    padding: 4px;
+}
+.music-player button[aria-pressed="true"] {
+    background-color: #c9a227;
+}
+.music-player input[type="range"] {
+    width: 80px;
+}
+
+#import-status {
+    max-width: 320px;
+    text-align: center;
+    font-family: "Alkhemikal", sans-serif;
+    font-size: 18px;
+    color: #e6deca;
+}
+#import-status p {
+    margin: 2px 0;
 }

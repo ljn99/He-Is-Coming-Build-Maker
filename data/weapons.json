@@ -2,7 +2,7 @@
   {
     "id": "bee_stinger",
     "name": "Bee Stinger",
-    "rarity": "cauldron",
+    "rarity": "cauldron_gold",
     "description": "First Turn: Give the enemy 4 poison, 3 acid and 2 stun on hit",
     "healthBonus": 0,
     "attack": 3,
@@ -3104,7 +3104,7 @@
     "image": null,
     "stackable": false,
     "maxStacks": 1,
-    "dynamicEffect": null,
+    "dynamicEffect": { "type": "perTag", "tag": "stone", "stat": "attack", "amount": 2 },
     "rawTags": [
       40
     ]

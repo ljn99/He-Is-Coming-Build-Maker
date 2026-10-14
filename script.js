@@ -14,6 +14,7 @@ const rarityIcons = {
   cursed: "assets/icons/rarity_cursed.png",
   set: "assets/icons/rarity_itemset.png",
   cauldron: "assets/icons/rarity_cauldron.png",
+  cauldron_gold: "assets/icons/rarity_cauldron_gold.png",
   gold: "assets/icons/rarity_gold.png",
   diamond: "assets/icons/rarity_diamond.png"
 };
@@ -40,7 +41,7 @@ const weaponComponents = {
     twin_saws: ["twin_spear", "rusty_bonesaw"]
 };
 
-const rarityOrder = ["common", "rare", "heroic", "mythic", "cursed", "cauldron"];
+const rarityOrder = ["common", "rare", "heroic", "mythic", "cursed", "cauldron", "cauldron_gold"];
 const categoryOrder = ["weapon", "item", "edge"];
 
 function rarityRank(rarity) {
@@ -605,7 +606,7 @@ function passesFilters(item, rarityFilters, tagFilters, bundleFilters, searchTex
     let bundleOk = null;
 
     if (wanted.length !== 0) {
-        if (item.rarity === "cauldron") {
+        if (item.rarity === "cauldron" || item.rarity === "cauldron_gold") {
             bundleOk = item.regionBundles.every(bundle => wanted.includes(bundle))
         } else {
             bundleOk = wanted.includes(item.kingmakerBundle);
@@ -958,3 +959,108 @@ Promise.all([
 });
 
 renderBuild();
+
+// ---------- Music player ----------
+
+// File names in assets/music. The dropdown labels are made from them.
+const musicTracks = [
+    "Gauntlet_Boss.ogg",
+    "Gauntlet_Overworld.ogg",
+    "He is Coming - Kingmaker Victory.ogg",
+    "a_long_time_ago.ogg",
+    "abondoned_quarry_island.ogg",
+    "audience_with_the_pumpking.ogg",
+    "b_heavy_is_the_crown.ogg",
+    "b_lost_hope.ogg",
+    "b_showtime.ogg",
+    "boss_intro.ogg",
+    "boss_intro_long.ogg",
+    "challenger_island.ogg",
+    "champion_defeated.ogg",
+    "fanfare.ogg",
+    "glyph_ruins_island.ogg",
+    "halloween_main_menu.ogg",
+    "hic_boss_leshen_1.ogg",
+    "hydra_boss.ogg",
+    "kingmaker_champion.ogg",
+    "kingmaker_overworld.ogg",
+    "kingmaker_overworld_champion.ogg",
+    "lushwood_island.ogg",
+    "main_menu.ogg",
+    "miniboss_music.ogg",
+    "misplaced_mire_island.ogg",
+    "old_b_showtime.ogg",
+    "pumpkin_land.ogg",
+    "scorched_hill_island.ogg",
+    "serpent_basin_island.ogg",
+    "start_island.ogg",
+    "sunken_palace_island.ogg",
+    "toadstool_town.ogg",
+    "trick_or_treat.ogg",
+    "witch_march_island.ogg",
+    "woodland_battle.ogg",
+    "woodland_day.ogg",
+    "woodland_night.ogg"
+];
+
+const musicAudio = new Audio();
+musicAudio.volume = 0.5;
+const trackSelect = document.getElementById("track-select");
+const playButton = document.getElementById("music-play");
+const loopButton = document.getElementById("music-loop");
+const volumeSlider = document.getElementById("music-volume");
+
+// "a_long_time_ago.ogg" -> "A Long Time Ago"
+function trackLabel(fileName) {
+    return fileName
+        .replace(/\.ogg$/, "")
+        .replace(/_/g, " ")
+        .replace(/\b[a-z]/g, letter => letter.toUpperCase());
+}
+
+musicTracks.forEach(fileName => {
+    const option = document.createElement("option");
+    option.value = fileName;
+    option.textContent = trackLabel(fileName);
+    trackSelect.appendChild(option);
+});
+
+function playTrack(fileName) {
+    // encodeURIComponent keeps file names with spaces working in the URL
+    musicAudio.src = "assets/music/" + encodeURIComponent(fileName);
+    musicAudio.play().catch(() => {});
+}
+
+trackSelect.addEventListener("change", () => {
+    if (trackSelect.value) {
+        playTrack(trackSelect.value);
+    } else {
+        musicAudio.pause();
+    }
+});
+
+playButton.addEventListener("click", () => {
+    if (!trackSelect.value) {
+        return;
+    }
+    if (musicAudio.paused) {
+        musicAudio.play().catch(() => {});
+    } else {
+        musicAudio.pause();
+    }
+});
+
+loopButton.addEventListener("click", () => {
+    musicAudio.loop = !musicAudio.loop;
+    loopButton.setAttribute("aria-pressed", musicAudio.loop);
+    loopButton.textContent = musicAudio.loop ? "Loop: On" : "Loop: Off";
+});
+
+volumeSlider.addEventListener("input", () => {
+    musicAudio.volume = Number(volumeSlider.value);
+});
+
+// Keep the button text in sync with what the audio is really doing.
+musicAudio.addEventListener("play", () => { playButton.textContent = "Pause"; });
+musicAudio.addEventListener("pause", () => { playButton.textContent = "Play"; });
+musicAudio.addEventListener("ended", () => { playButton.textContent = "Play"; });
