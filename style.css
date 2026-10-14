@@ -35,6 +35,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .item-slots {
@@ -381,4 +383,53 @@ ul {
     padding: 4px;
     margin: 4px 2px 0;
     font-size: 20px;
+}
+
+.save-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.save-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.save-panel input[type="text"] {
+    width: 170px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.save-panel select,
+.save-panel button {
+    font-family: "Alkhemikal", sans-serif;
+    font-size: 20px;
+    background-color: #e6deca;
+    color: #25131a;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+}
+
+.save-panel select {
+    max-width: 170px;
+    padding: 4px;
+}
+
+.save-panel button {
+    cursor: pointer;
+}
+
+.save-panel button:hover {
+    opacity: 0.8;
+}
+
+#save-status {
+    min-width: 120px;
+    font-size: 18px;
 }

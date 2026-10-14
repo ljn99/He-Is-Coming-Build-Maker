@@ -97,7 +97,7 @@ let allSets = [];
 let selectedIndex = null;
 
 function loadItems(jsonPath, callback) {
-    fetch(jsonPath)
+    return fetch(jsonPath)
         .then(response => response.json())
         .then(data => {
             callback(data);
@@ -172,6 +172,7 @@ function buildTooltipContent(item) {
 }
 
 function renderBuild() {
+    autosaveBuild();
     document.getElementById("tooltip").style.display = "none";
 
     const weaponSlot = document.querySelector(".weapon-slot");
@@ -655,6 +656,235 @@ function getActiveSets() {
     });
 }
 
+// ---------- Saving and loading builds ----------
+
+const SAVE_KEY = "hic-saved-builds";
+let saveStatusTimer = null;
+
+// Turn the current build into a small plain object that only stores ids,
+// so saved builds keep working even if the item data is edited later.
+function serializeBuild() {
+    return {
+        weapon: build.weapon ? build.weapon.id : null,
+        weaponStacks: build.weaponStacks,
+        edge: build.edge ? build.edge.id : null,
+        oils: { ...build.oils },
+        items: build.items.map(item => item ? { id: item.id, tier: item.tier || 0 } : null)
+    };
+}
+
+// The reverse: look the ids back up in the loaded data and rebuild the build.
+function applyBuild(data) {
+    if (typeof data !== "object" || data === null) {
+        return false;
+    }
+
+    build.weapon = allWeapons.find(weapon => weapon.id === data.weapon) || getDefaultWeapon();
+    const maxStacks = build.weapon && build.weapon.stackable ? build.weapon.maxStacks : 1;
+    build.weaponStacks = Math.min(Math.max(Number(data.weaponStacks) || 1, 1), maxStacks);
+
+    build.edge = allEdges.find(edge => edge.id === data.edge) || null;
+
+    const oils = data.oils || {};
+    build.oils = {
+        attack: oils.attack !== false,
+        armor: oils.armor !== false,
+        speed: oils.speed !== false
+    };
+
+    build.items.fill(null);
+    (Array.isArray(data.items) ? data.items : []).slice(0, build.items.length).forEach((entry, index) => {
+        if (!entry) {
+            return;
+        }
+        const item = allItems.find(candidate => candidate.id === entry.id);
+        if (!item) {
+            return;
+        }
+        const tier = item.goldImage ? Math.min(Math.max(Number(entry.tier) || 0, 0), 2) : 0;
+        build.items[index] = tier > 0 ? makeTier(item, tier) : item;
+    });
+
+    selectedIndex = null;
+    renderBuild();
+    return true;
+}
+
+function readSavedBuilds() {
+    try {
+        const parsed = JSON.parse(localStorage.getItem(SAVE_KEY));
+        return Array.isArray(parsed) ? parsed : [];
+    } catch (error) {
+        return [];
+    }
+}
+
+function writeSavedBuilds(saved) {
+    try {
+        localStorage.setItem(SAVE_KEY, JSON.stringify(saved));
+        return true;
+    } catch (error) {
+        return false;
+    }
+}
+
+function showSaveStatus(message) {
+    const status = document.getElementById("save-status");
+    status.textContent = message;
+    clearTimeout(saveStatusTimer);
+    saveStatusTimer = setTimeout(() => {
+        status.textContent = "";
+    }, 2500);
+}
+
+function refreshSavedList(selectName) {
+    const select = document.getElementById("saved-builds");
+    select.innerHTML = "";
+
+    const names = readSavedBuilds().map(entry => entry.name).sort((a, b) => a.localeCompare(b));
+
+    if (names.length === 0) {
+        const empty = document.createElement("option");
+        empty.value = "";
+        empty.textContent = "No saved builds";
+        select.appendChild(empty);
+        return;
+    }
+
+    names.forEach(name => {
+        const option = document.createElement("option");
+        option.value = name;
+        option.textContent = name;
+        select.appendChild(option);
+    });
+
+    if (selectName) {
+        select.value = selectName;
+    }
+}
+
+function handleSaveClick() {
+    const nameInput = document.getElementById("build-name");
+    const name = nameInput.value.trim();
+
+    if (name === "") {
+        showSaveStatus("Enter a name first");
+        return;
+    }
+
+    const saved = readSavedBuilds();
+    const existingIndex = saved.findIndex(entry => entry.name === name);
+
+    if (existingIndex !== -1 && !confirm('Overwrite "' + name + '"?')) {
+        return;
+    }
+
+    const entry = { name: name, build: serializeBuild() };
+    if (existingIndex !== -1) {
+        saved[existingIndex] = entry;
+    } else {
+        saved.push(entry);
+    }
+
+    if (writeSavedBuilds(saved)) {
+        refreshSavedList(name);
+        showSaveStatus('Saved "' + name + '"');
+    } else {
+        showSaveStatus("Couldn't save (browser storage is unavailable)");
+    }
+}
+
+function handleLoadClick() {
+    const name = document.getElementById("saved-builds").value;
+    const entry = readSavedBuilds().find(candidate => candidate.name === name);
+
+    if (!entry) {
+        showSaveStatus("Nothing to load");
+        return;
+    }
+
+    applyBuild(entry.build);
+    document.getElementById("build-name").value = name;
+    showSaveStatus('Loaded "' + name + '"');
+}
+
+function handleDeleteClick() {
+    const name = document.getElementById("saved-builds").value;
+    if (name === "") {
+        return;
+    }
+    if (!confirm('Delete "' + name + '"?')) {
+        return;
+    }
+
+    writeSavedBuilds(readSavedBuilds().filter(entry => entry.name !== name));
+    refreshSavedList();
+    showSaveStatus('Deleted "' + name + '"');
+}
+
+// A share link stores the whole build in the part of the URL after "#".
+function buildShareLink() {
+    const encoded = btoa(JSON.stringify(serializeBuild()));
+    return location.origin + location.pathname + "#build=" + encodeURIComponent(encoded);
+}
+
+function handleShareClick() {
+    const link = buildShareLink();
+
+    if (!navigator.clipboard) {
+        window.prompt("Copy this link:", link);
+        return;
+    }
+
+    navigator.clipboard.writeText(link).then(
+        () => showSaveStatus("Link copied"),
+        () => window.prompt("Copy this link:", link)
+    );
+}
+
+// ---------- Autosave ----------
+// Every time the build is drawn we also stash it in localStorage, so a
+// refresh or a closed tab doesn't lose your work.
+
+const AUTOSAVE_KEY = "hic-autosave";
+let autosaveReady = false;   // stays false until the data has loaded, so the empty startup render can't overwrite your build
+let autosavePaused = false;  // true while a shared link is showing, until you click something
+
+function autosaveBuild() {
+    if (!autosaveReady || autosavePaused) {
+        return;
+    }
+    try {
+        localStorage.setItem(AUTOSAVE_KEY, JSON.stringify(serializeBuild()));
+    } catch (error) {
+        // storage blocked or full: autosave just quietly does nothing
+    }
+}
+
+function loadAutosave() {
+    try {
+        const raw = localStorage.getItem(AUTOSAVE_KEY);
+        if (raw) {
+            applyBuild(JSON.parse(raw));
+        }
+    } catch (error) {
+        // corrupted autosave: ignore it and start with a fresh build
+    }
+}
+
+function loadBuildFromHash() {
+    const match = location.hash.match(/^#build=(.+)$/);
+    if (!match) {
+        return;
+    }
+
+    try {
+        applyBuild(JSON.parse(atob(decodeURIComponent(match[1]))));
+    } catch (error) {
+        showSaveStatus("Couldn't read that build link");
+    }
+}
+
 const itemSlotsContainer = document.querySelector(".item-slots")
 for (let i = 0; i < build.items.length; i++) {
     const el = document.createElement("div");
@@ -691,13 +921,40 @@ document.querySelectorAll(".bundle-filter").forEach(el => {
 
 document.querySelector("#item-search").addEventListener("input", () => renderItemGrid());
 
-loadItems(weaponData, data => {
-    allWeapons = data;
-    build.weapon = getDefaultWeapon();
+document.getElementById("save-build").addEventListener("click", handleSaveClick);
+document.getElementById("load-build").addEventListener("click", handleLoadClick);
+document.getElementById("delete-build").addEventListener("click", handleDeleteClick);
+document.getElementById("share-build").addEventListener("click", handleShareClick);
+document.getElementById("build-name").addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        handleSaveClick();
+    }
+});
+refreshSavedList();
+
+// Promise.all waits until every file has finished loading, so a build saved
+// in the URL can be restored once all the data it refers to exists.
+Promise.all([
+    loadItems(weaponData, data => {
+        allWeapons = data;
+        build.weapon = getDefaultWeapon();
+        renderBuild();
+    }),
+    loadItems(itemData, data => { allItems = data; }),
+    loadItems(edgeData, data => { allEdges = data; }),
+    loadItems(setData, data => { allSets = data; })
+]).then(() => {
+    if (location.hash.startsWith("#build=")) {
+        // A shared link wins over the autosave. Don't overwrite your own
+        // autosave with it until you actually click something.
+        autosavePaused = true;
+        document.addEventListener("click", () => { autosavePaused = false; }, { once: true });
+        loadBuildFromHash();
+    } else {
+        loadAutosave();
+    }
+    autosaveReady = true;
     renderBuild();
 });
-loadItems(itemData, data => { allItems = data; });
-loadItems(edgeData, data => { allEdges = data; });
-loadItems(setData, data => { allSets = data; });
 
 renderBuild();
