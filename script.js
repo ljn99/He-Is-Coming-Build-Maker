@@ -99,7 +99,7 @@ let selectedIndex = null;
 
 function loadItems(jsonPath, callback) {
     // ?v=... makes browsers fetch fresh data after an update (bump it with the ones in index.html)
-    return fetch(jsonPath + "?v=3")
+    return fetch(jsonPath + "?v=5")
         .then(response => response.json())
         .then(data => {
             callback(data);
@@ -113,6 +113,26 @@ const statIcons = {
     armor: "assets/icons/icon_armor.png",
     speed: "assets/icons/icon_speed.png"
 };
+
+// The bundles whose codes we know: the icon file and the name shown in tooltips.
+// (Other codes in the data, like 0, 7, 50 and 80, aren't identified yet, so they show nothing.)
+const bundleInfo = {
+    1: { name: "Woodlands 1", icon: "assets/icons/woodland_red.png" },
+    2: { name: "Woodlands 2", icon: "assets/icons/woodland_blue.png" },
+    3: { name: "Woodlands 3", icon: "assets/icons/woodland_yellow.png" },
+    4: { name: "Swamplands 1", icon: "assets/icons/swampland_red.png" },
+    5: { name: "Swamplands 2", icon: "assets/icons/swampland_blue.png" },
+    6: { name: "Swamplands 3", icon: "assets/icons/swampland_yellow.png" }
+};
+
+// Cauldron items belong to one or two region bundles (regionBundles); everything
+// else belongs to a single kingmakerBundle.
+function getBundleIds(item) {
+    if (item.regionBundles && item.regionBundles.length > 0) {
+        return item.regionBundles;
+    }
+    return item.kingmakerBundle === undefined ? [] : [item.kingmakerBundle];
+}
 
 function buildTooltipContent(item) {
     const box = document.createElement("div");
@@ -168,6 +188,22 @@ function buildTooltipContent(item) {
         });
 
         box.appendChild(tagRow);
+    }
+
+    // One row with just the bundle icon(s); the name is kept as the alt text
+    const bundleIds = getBundleIds(item).filter(id => bundleInfo[id]);
+    if (bundleIds.length > 0) {
+        const row = document.createElement("div");
+        row.classList.add("tooltip-bundle");
+
+        bundleIds.forEach(id => {
+            const icon = document.createElement("img");
+            icon.src = bundleInfo[id].icon;
+            icon.alt = bundleInfo[id].name;
+            row.appendChild(icon);
+        });
+
+        box.appendChild(row);
     }
 
     return box;
@@ -283,6 +319,20 @@ function handleWeaponClick() {
     build.weaponStacks = 1;
     renderBuild();
 };
+
+// Empties the whole build: weapon back to the Wooden Stick, no edge, no items,
+// all three oils on.
+function handleClearBuild() {
+    build.weapon = getDefaultWeapon();
+    build.weaponStacks = 1;
+    build.edge = null;
+    build.oils = { attack: true, armor: true, speed: true };
+    build.items = Array(12).fill(null);
+    selectedIndex = null;
+    renderBuild();
+}
+
+document.getElementById("clear-build").addEventListener("click", handleClearBuild);
 
 function conditionMet(when, totals, base) {
     const source = when.source === "base" ? base:totals;
