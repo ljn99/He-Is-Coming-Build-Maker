@@ -288,6 +288,51 @@ body {
     scrollbar-width: none;
 }
 
+/* The filter column is a flex column so the Beta Branch button can sit centred
+   in whatever empty space is left below the music player. */
+.item-filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-filter > * {
+    flex-shrink: 0;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.beta-branch {
+    flex: 1 0 auto;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.beta-branch button {
+    font-family: "Alkhemikal", sans-serif;
+    font-size: 20px;
+    background-color: #e6deca;
+    color: #25131a;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.beta-branch button:hover {
+    opacity: 0.8;
+}
+
+.beta-branch button[aria-pressed="true"],
+.beta-branch button[aria-pressed="true"]:hover {
+    opacity: 0.5;
+}
+
 input[type="text"] {
     display: block;
     margin: 0 auto;

@@ -367,7 +367,7 @@
     "maxStacks": 1,
     "dynamicEffect": null,
     "components": [
-      "loose_change"
+      ""
     ]
   },
   {
@@ -521,7 +521,7 @@
     "maxStacks": 1,
     "dynamicEffect": null,
     "components": [
-      "green_candy"
+      ""
     ]
   },
   {

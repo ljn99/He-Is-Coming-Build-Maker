@@ -99,7 +99,7 @@ let selectedIndex = null;
 
 function loadItems(jsonPath, callback) {
     // ?v=... makes browsers fetch fresh data after an update (bump it with the ones in index.html)
-    return fetch(jsonPath + "?v=12")
+    return fetch(jsonPath + "?v=16")
         .then(response => response.json())
         .then(data => {
             callback(data);
@@ -673,6 +673,12 @@ function renderItemGrid() {
 }
 
 function passesFilters(item, rarityFilters, tagFilters, bundleFilters, searchText) {
+    if (betaBranch && isDarklands(item)) {
+        return false;
+    }
+    if (hideUnused && isUnused(item)) {
+        return false;
+    }
     const rarityOk = rarityFilters.length === 0 || rarityFilters.includes(item.rarity);
     const tagOk = tagFilters.length === 0 || tagFilters.every(tag => item.tags.includes(tag));
     const searchOk = item.name.toLowerCase().includes(searchText);
@@ -1015,6 +1021,84 @@ document.getElementById("build-name").addEventListener("keydown", (event) => {
     }
 });
 refreshSavedList();
+
+// "Beta Branch" hides everything from the Darklands (bundles 7, 8 and 9), plus the
+// Darklands filter buttons, for people who don't want spoilers.
+const BETA_KEY = "hic-beta-branch";
+let betaBranch = false;
+
+function isDarklands(item) {
+    const isCauldron = item.rarity === "cauldron" || item.rarity === "cauldron_gold";
+    return !isCauldron && item.kingmakerBundle >= 7 && item.kingmakerBundle <= 9;
+}
+
+function setBetaBranch(on) {
+    betaBranch = on;
+    const button = document.getElementById("beta-branch");
+    button.setAttribute("aria-pressed", on ? "true" : "false");
+    document.getElementById("darkland-bundles").hidden = on;
+    if (on) {
+        // A hidden filter must not keep filtering the grid
+        document.querySelectorAll("#darkland-bundles .bundle-filter").forEach(el => {
+            el.checked = false;
+        });
+    }
+    try {
+        localStorage.setItem(BETA_KEY, on ? "1" : "0");
+    } catch (error) {
+        // Private windows can block storage; the button still works for this visit
+    }
+    renderItemGrid();
+}
+
+document.getElementById("beta-branch").addEventListener("click", () => setBetaBranch(!betaBranch));
+
+// "Unused Items" hides content that isn't obtainable in the normal game: anything
+// whose bundle code is 0 or 99. (Bundles 1-9 are real, 50 is cauldron, 60 is Honeycomb and 80
+// is event/mythic/cursed.) Cauldron items and item sets are never hidden by this.
+const UNUSED_KEY = "hic-hide-unused";
+let hideUnused = false;
+
+function isUnused(item) {
+    const isCauldron = item.rarity === "cauldron" || item.rarity === "cauldron_gold";
+    if (isCauldron || item.rarity === "set") {
+        return false;
+    }
+    return item.kingmakerBundle === 0 || item.kingmakerBundle === 99;
+}
+
+function setHideUnused(on) {
+    hideUnused = on;
+    document.getElementById("hide-unused").setAttribute("aria-pressed", on ? "true" : "false");
+    try {
+        localStorage.setItem(UNUSED_KEY, on ? "1" : "0");
+    } catch (error) {
+        // Storage can be blocked; the button still works for this visit
+    }
+    renderItemGrid();
+}
+
+document.getElementById("hide-unused").addEventListener("click", () => setHideUnused(!hideUnused));
+
+try {
+    if (localStorage.getItem(UNUSED_KEY) === "1") {
+        hideUnused = true;
+        document.getElementById("hide-unused").setAttribute("aria-pressed", "true");
+    }
+} catch (error) {
+    // No storage available: start with everything showing
+}
+
+
+try {
+    if (localStorage.getItem(BETA_KEY) === "1") {
+        betaBranch = true;
+        document.getElementById("beta-branch").setAttribute("aria-pressed", "true");
+        document.getElementById("darkland-bundles").hidden = true;
+    }
+} catch (error) {
+    // No storage available: start with Darklands items showing
+}
 
 // Promise.all waits until every file has finished loading, so a build saved
 // in the URL can be restored once all the data it refers to exists.

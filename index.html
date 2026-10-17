@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>HIC Build Planner</title>
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=16">
 </head>
 <body>
     <div class="build-panel"></div>
@@ -91,7 +91,7 @@
                 <li><label class="bundle-icon" for="bundle5"><input type="checkbox" id="bundle5" class="bundle-filter" value="5"><img src="assets/icons/swampland_blue.png" alt="Swamplands 2"></label></li>
                 <li><label class="bundle-icon" for="bundle6"><input type="checkbox" id="bundle6" class="bundle-filter" value="6"><img src="assets/icons/swampland_yellow.png" alt="Swamplands 3"></label></li>
             </ul>
-            <ul class="bundles">
+            <ul class="bundles" id="darkland-bundles">
                 <li><label class="bundle-icon" for="bundle7"><input type="checkbox" id="bundle7" class="bundle-filter" value="7"><img src="assets/icons/darkland_red.png" alt="Darklands 1"></label></li>
                 <li><label class="bundle-icon" for="bundle8"><input type="checkbox" id="bundle8" class="bundle-filter" value="8"><img src="assets/icons/darkland_blue.png" alt="Darklands 2"></label></li>
                 <li><label class="bundle-icon" for="bundle9"><input type="checkbox" id="bundle9" class="bundle-filter" value="9"><img src="assets/icons/darkland_yellow.png" alt="Darklands 3"></label></li>
@@ -138,12 +138,16 @@
                     <input type="range" id="music-volume" min="0" max="1" step="0.05" value="0.5" aria-label="Volume">
                 </div>
             </div>
+            <div class="beta-branch">
+                <button type="button" id="beta-branch" aria-pressed="false">Beta Branch</button>
+                <button type="button" id="hide-unused" aria-pressed="false">Unused Items</button>
+            </div>
         </div>
 
     </div>
 
     <div class="tooltip" id="tooltip"></div>
-    <script src="script.js?v=12"></script>
-    <script src="screenshot.js?v=12"></script>
+    <script src="script.js?v=16"></script>
+    <script src="screenshot.js?v=16"></script>
 </body>
 </html>
