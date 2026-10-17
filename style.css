@@ -88,6 +88,29 @@ body {
     position: relative;
 }
 
+/* Small "x" that clears the build. It floats to the left of the weapon slot
+   (absolute), so it doesn't take up room or move anything else. */
+#clear-build {
+    position: absolute;
+    top: 0;
+    left: -34px;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    font-family: "Alkhemikal", sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    background-color: #e6deca;
+    color: #25131a;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#clear-build:hover {
+    opacity: 0.8;
+}
+
 .weapon-slot {
     width: 120px;
     height: 120px;
@@ -423,7 +446,8 @@ ul {
 }
 
 .save-panel select,
-.save-panel button {
+.save-panel button,
+#clear-filters {
     font-family: "Alkhemikal", sans-serif;
     font-size: 20px;
     background-color: #e6deca;
@@ -438,12 +462,19 @@ ul {
     padding: 4px;
 }
 
-.save-panel button {
+.save-panel button,
+#clear-filters {
     cursor: pointer;
 }
 
-.save-panel button:hover {
+.save-panel button:hover,
+#clear-filters:hover {
     opacity: 0.8;
+}
+
+#clear-filters {
+    display: block;
+    margin: 6px auto;
 }
 
 #save-status {

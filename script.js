@@ -99,7 +99,7 @@ let selectedIndex = null;
 
 function loadItems(jsonPath, callback) {
     // ?v=... makes browsers fetch fresh data after an update (bump it with the ones in index.html)
-    return fetch(jsonPath + "?v=5")
+    return fetch(jsonPath + "?v=12")
         .then(response => response.json())
         .then(data => {
             callback(data);
@@ -115,14 +115,17 @@ const statIcons = {
 };
 
 // The bundles whose codes we know: the icon file and the name shown in tooltips.
-// (Other codes in the data, like 0, 7, 50 and 80, aren't identified yet, so they show nothing.)
+// (Other codes in the data, like 0, 50 and 80, aren't identified yet, so they show nothing.)
 const bundleInfo = {
     1: { name: "Woodlands 1", icon: "assets/icons/woodland_red.png" },
     2: { name: "Woodlands 2", icon: "assets/icons/woodland_blue.png" },
     3: { name: "Woodlands 3", icon: "assets/icons/woodland_yellow.png" },
     4: { name: "Swamplands 1", icon: "assets/icons/swampland_red.png" },
     5: { name: "Swamplands 2", icon: "assets/icons/swampland_blue.png" },
-    6: { name: "Swamplands 3", icon: "assets/icons/swampland_yellow.png" }
+    6: { name: "Swamplands 3", icon: "assets/icons/swampland_yellow.png" },
+    7: { name: "Darklands 1", icon: "assets/icons/darkland_red.png" },
+    8: { name: "Darklands 2", icon: "assets/icons/darkland_blue.png" },
+    9: { name: "Darklands 3", icon: "assets/icons/darkland_yellow.png" }
 };
 
 // Cauldron items belong to one or two region bundles (regionBundles); everything
@@ -401,6 +404,26 @@ function calculateStats() {
             case "perTag": {
                 const count = pieces.filter(other => other.tags.includes(effect.tag)).length;
                 totals[effect.stat] += effect.amount * count;
+                break;
+            }
+            case "perNegativeHealth": {
+                // Every point of negative max health on the weapon, items and sets
+                const negativeHealth = ignoreNegatives ? 0 : pieces.reduce((sum, other) => sum + Math.max(0, -(other.healthBonus || 0)), 0);
+                totals[effect.stat] += effect.amount * negativeHealth;
+                break;
+            }
+            case "perRarity": {
+                // Counts equipped items (not the weapon) of the listed rarities
+                const rarityCount = build.items.filter(slot => slot !== null && effect.rarities.includes(slot.rarity)).length;
+                totals[effect.stat] += effect.amount * rarityCount;
+                break;
+            }
+            case "doubleIfEqual": {
+                // Giant's Armor: if max health equals base armor, double both
+                if (totals.health === base.armor) {
+                    totals.armor += base.armor;
+                    totals.health *= 2;
+                }
                 break;
             }
             case "perEmptySlot": {
@@ -972,6 +995,15 @@ document.querySelectorAll(".bundle-filter").forEach(el => {
 });
 
 document.querySelector("#item-search").addEventListener("input", () => renderItemGrid());
+
+// Unticks every rarity, tag and bundle filter and empties the search box
+document.getElementById("clear-filters").addEventListener("click", () => {
+    document.querySelectorAll(".rarity-filter, .tag-filter, .bundle-filter").forEach(el => {
+        el.checked = false;
+    });
+    document.querySelector("#item-search").value = "";
+    renderItemGrid();
+});
 
 document.getElementById("save-build").addEventListener("click", handleSaveClick);
 document.getElementById("load-build").addEventListener("click", handleLoadClick);

@@ -528,7 +528,7 @@
     "id": "iron_chains",
     "name": "Iron Chain",
     "rarity": "set",
-    "description": "Exposed & Wounded: Gain 1 attack",
+    "description": "Exposed & Wounded: Gain 3 attack",
     "healthBonus": 0,
     "attack": 0,
     "armor": 0,
@@ -698,28 +698,6 @@
     "components": [
       "ironstone_bracelet",
       "petrified_statue"
-    ]
-  },
-  {
-    "id": "ironstone_gem",
-    "name": "Ironstone Gem",
-    "rarity": "set",
-    "description": "Attack is always equal to speed",
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": "Spritesheet_Items_r60c05.png",
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": { "type": "copyStat", "stat": "attack", "from": "speed", "source": "current" },
-    "components": [
-      "ironstone_greatsword",
-      "citrine_gemstone"
     ]
   },
   {
@@ -915,7 +893,7 @@
     "dynamicEffect": null,
     "components": [
       "sanguine_scepter",
-      "ruby_gemstone"
+      "granite_gemstone"
     ]
   },
   {
@@ -1093,6 +1071,72 @@
     "components": [
       "bone_crown",
       "gravebloom_mask"
+    ]
+  },
+  {
+    "id": "golden_jigsaw",
+    "name": "Golden Jigsaw",
+    "rarity": "set",
+    "description": null,
+    "healthBonus": 20,
+    "attack": 0,
+    "armor": 0,
+    "speed": 0,
+    "tags": [],
+    "hasGolden": false,
+    "hasDiamond": false,
+    "kingmakerBundle": 0,
+    "image": "Spritesheet_Items_r67c03.png",
+    "stackable": false,
+    "maxStacks": 1,
+    "dynamicEffect": null,
+    "components": [
+      "liferoot_lute",
+      "small_kazoo"
+    ]
+  },
+  {
+    "id": "ironbark_crest",
+    "name": "Ironbark Crest",
+    "rarity": "set",
+    "description": "All wood and stone items have both tags",
+    "healthBonus": 0,
+    "attack": 0,
+    "armor": 0,
+    "speed": 0,
+    "tags": [],
+    "hasGolden": false,
+    "hasDiamond": false,
+    "kingmakerBundle": 0,
+    "image": "Spritesheet_Items_r69c11.png",
+    "stackable": false,
+    "maxStacks": 1,
+    "dynamicEffect": null,
+    "components": [
+      "ore_heart",
+      "oak_heart"
+    ]
+  },
+  {
+    "id": "woodcutters_regret",
+    "name": "Woodcutter's Regret",
+    "rarity": "set",
+    "description": null,
+    "healthBonus": -5,
+    "attack": 0,
+    "armor": 0,
+    "speed": 0,
+    "tags": [],
+    "hasGolden": false,
+    "hasDiamond": false,
+    "kingmakerBundle": 0,
+    "image": "Spritesheet_Items_r69c10.png",
+    "stackable": false,
+    "maxStacks": 1,
+    "dynamicEffect": null,
+    "components": [
+      "woodcutters_axe",
+      "woodcutters_boots"
     ]
   }
 ]

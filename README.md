@@ -55,7 +55,7 @@ assets/           images and fonts
 tools/            helper scripts (build_sprite_masks.py regenerates data/sprite-masks.json)
 ```
 
-Items that change stats based on your build use a small `dynamicEffect` object in the JSON (for example `perTag`, `addIf`, `multiply`, `copyStat`, `negate`). A piece counts toward its own `perTag` total if it has that tag. Rarity values in the data are `common`, `rare`, `heroic`, `mythic`, `cursed`, `cauldron` and `cauldron_gold`. `script.js` evaluates these in the same order the game does: weapon, edge, items from left to right and top to bottom, then sets, with "always" effects applied last.
+Items that change stats based on your build use a small `dynamicEffect` object in the JSON (for example `perTag`, `addIf`, `multiply`, `copyStat`, `negate`, `setStat`, `perRarity`, `perNegativeHealth`, `doubleIfEqual`). A piece counts toward its own `perTag` total if it has that tag. Rarity values in the data are `common`, `rare`, `heroic`, `mythic`, `cursed`, `cauldron` and `cauldron_gold`. `script.js` evaluates these in the same order the game does: weapon, edge, items from left to right and top to bottom, then sets, with "always" effects applied last.
 
 ## Known limitations
 
