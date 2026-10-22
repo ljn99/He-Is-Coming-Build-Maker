@@ -520,9 +520,7 @@
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
-    "components": [
-      ""
-    ]
+    "components": []
   },
   {
     "id": "iron_chains",
@@ -629,10 +627,7 @@
     "stackable": false,
     "maxStacks": 1,
     "dynamicEffect": null,
-    "components": [
-      "liferoot_tome",
-      "granite_tome"
-    ]
+    "components": []
   },
   {
     "id": "ironstone_arrowhead",
@@ -989,7 +984,7 @@
     "id": "unstoppable",
     "name": "Unstoppable",
     "rarity": "set",
-    "description": "Your strikes ignore armor",
+    "description": "Battle Start: Gain 3 Block",
     "healthBonus": 0,
     "attack": 0,
     "armor": 0,

@@ -1,0 +1,9 @@
+Update unused items, including egg and its recipes
+Correct wooden flute sprite
+Correct tambourine sprite
+Remove gravebloom pendant
+Remove nightmare essence
+Correct warhorn sprite
+Rm painsplit pendant
+shorten share links
+Add display for current build's bundles
