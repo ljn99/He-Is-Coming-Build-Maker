@@ -504,25 +504,6 @@
     ]
   },
   {
-    "id": "iron_oak_medallion",
-    "name": "Mountain king's Medallion",
-    "rarity": "edge",
-    "description": "Whenever you lose health, gain that much armor",
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null,
-    "components": []
-  },
-  {
     "id": "iron_chains",
     "name": "Iron Chain",
     "rarity": "set",
@@ -806,25 +787,6 @@
     ]
   },
   {
-    "id": "rapid_growth",
-    "name": "Showstopper",
-    "rarity": "edge",
-    "description": "Items with exposed and wounded won't trigger",
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null,
-    "components": []
-  },
-  {
     "id": "raptor_talon",
     "name": "Saffron Talon",
     "rarity": "set",
@@ -934,28 +896,6 @@
     "components": [
       "silverscale_dagger",
       "toxic_algae"
-    ]
-  },
-  {
-    "id": "stone_scales",
-    "name": "Stone Scales",
-    "rarity": "edge",
-    "description": "Wounded: Gain 10 Armor",
-    "healthBonus": 0,
-    "attack": 0,
-    "armor": 0,
-    "speed": 0,
-    "tags": [],
-    "hasGolden": false,
-    "hasDiamond": false,
-    "kingmakerBundle": 0,
-    "image": null,
-    "stackable": false,
-    "maxStacks": 1,
-    "dynamicEffect": null,
-    "components": [
-      "petrifying_flask",
-      "razor_scales"
     ]
   },
   {

@@ -19,6 +19,10 @@ It's plain HTML, CSS and JavaScript. There is nothing to install and no build st
 - **Autosave.** Your current build is remembered automatically, so refreshing or closing the tab won't lose it.
 - **Load from a screenshot.** Click *Load from screenshot* (or paste / drop an image) and the planner reads your weapon, items and Gold/Diamond tiers straight from a game screenshot. It recognises Golden and Diamond tiers and Cauldron / Gold Cauldron items, and it also picks up the edge and oils when the screenshot shows them (the game-over, victory and champions panels, or the tooltip you get by hovering your weapon). Without that info it assumes no edge and all three oils. Screenshots that show two builds side by side (for example some battle screens) aren't supported. Note: the importer needs more testing and may make mistakes still.
 - **Music player** with the game's soundtrack: pick a track from the dropdown and it plays, with play/pause, loop and volume controls.
+- **Build bundles.** A column to the left of your items shows the region bundle icon of everything in your build, so you can see at a glance which bundles it draws from.
+- **Clear buttons.** *Clear filters* (under the search box) unticks every filter and empties the search. The **x** to the left of the weapon slot clears the whole build.
+- **Beta Branch** button: hides everything from the Darklands (its items, weapons, edges and bundle filters). The planner remembers your choice.
+- **Unused Items** button: hides items, weapons and edges that can't be obtained in the normal game. The planner remembers your choice.
 
 ## How to use it
 
@@ -26,6 +30,7 @@ It's plain HTML, CSS and JavaScript. There is nothing to install and no build st
 - **Shift + Click** adds the Golden version, **Ctrl + Click** adds the Diamond version (common items only).
 - In your build, click an item to select it, then click another slot to swap, or click the same item again to remove it.
 - Click the weapon slot to reset to the Wooden Stick. Click the edge slot to remove the edge.
+- Click the **x** next to the weapon slot to clear the whole build (Wooden Stick, no edge, no items, all three oils).
 - Click an oil to toggle it.
 - Type a name and press **Save** to store the build. Pick it from the dropdown and press **Load** or **Delete**. **Copy link** gives a URL anyone can open to see your build.
 
@@ -55,7 +60,7 @@ assets/           images and fonts
 tools/            helper scripts (build_sprite_masks.py regenerates data/sprite-masks.json)
 ```
 
-Items that change stats based on your build use a small `dynamicEffect` object in the JSON (for example `perTag`, `addIf`, `multiply`, `copyStat`, `negate`, `setStat`, `perRarity`, `perNegativeHealth`, `doubleIfEqual`). A piece counts toward its own `perTag` total if it has that tag. Rarity values in the data are `common`, `rare`, `heroic`, `mythic`, `cursed`, `cauldron` and `cauldron_gold`. `script.js` evaluates these in the same order the game does: weapon, edge, items from left to right and top to bottom, then sets, with "always" effects applied last.
+Items that change stats based on your build use a small `dynamicEffect` object in the JSON (for example `perTag`, `addIf`, `multiply`, `copyStat`, `negate`, `setStat`, `perRarity`, `perTier`, `perNegativeHealth`, `doubleIfEqual`). A piece counts toward its own `perTag` total if it has that tag. Rarity values in the data are `common`, `rare`, `heroic`, `mythic`, `cursed`, `cauldron` and `cauldron_gold`. `script.js` evaluates these in the same order the game does: weapon, edge, items from left to right and top to bottom, then sets, with "always" effects applied after that and Battle Start checks on the finished stats (Giant's Armor) last.
 
 ## Known limitations
 

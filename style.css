@@ -260,6 +260,24 @@ body {
     gap: 8px;
 }
 
+/* Icons of the region bundles the build uses. Like the set column, it sits
+   outside the item slots (absolute), centred vertically on their left. */
+.bundle-column {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bundle-column img {
+    height: 32px;
+    image-rendering: pixelated;
+}
+
 .item-picker {
     display: flex;
     flex-direction: row;

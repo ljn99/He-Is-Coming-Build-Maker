@@ -99,7 +99,7 @@ let selectedIndex = null;
 
 function loadItems(jsonPath, callback) {
     // ?v=... makes browsers fetch fresh data after an update (bump it with the ones in index.html)
-    return fetch(jsonPath + "?v=16")
+    return fetch(jsonPath + "?v=20")
         .then(response => response.json())
         .then(data => {
             callback(data);
@@ -114,8 +114,9 @@ const statIcons = {
     speed: "assets/icons/icon_speed.png"
 };
 
-// The bundles whose codes we know: the icon file and the name shown in tooltips.
-// (Other codes in the data, like 0, 50 and 80, aren't identified yet, so they show nothing.)
+// The region bundles: the icon file and the name shown in tooltips.
+// (Other codes have no icon: 0 and 99 = unused, 50 = cauldron, 60 = Honeycomb,
+// 80 = event/mythic/cursed. Cauldron items show their regionBundles instead.)
 const bundleInfo = {
     1: { name: "Woodlands 1", icon: "assets/icons/woodland_red.png" },
     2: { name: "Woodlands 2", icon: "assets/icons/woodland_blue.png" },
@@ -282,6 +283,8 @@ function renderBuild() {
         setColumn.appendChild(setBox);
     });
 
+    renderBundleColumn();
+
     const stats = calculateStats();
     document.getElementById("stat-health").textContent = stats.health;
     document.getElementById("stat-attack").textContent = stats.attack;
@@ -296,6 +299,28 @@ function renderBuild() {
         }
     });
 };
+
+// Shows one icon for every region bundle the current build uses (weapon, edge
+// and items), in a column to the left of the item slots.
+function renderBundleColumn() {
+    const column = document.querySelector(".bundle-column");
+    column.innerHTML = "";
+
+    const used = new Set();
+    [build.weapon, build.edge, ...build.items].forEach(piece => {
+        if (piece) {
+            getBundleIds(piece).forEach(id => used.add(id));
+        }
+    });
+
+    [...used].filter(id => bundleInfo[id]).sort((a, b) => a - b).forEach(id => {
+        const icon = document.createElement("img");
+        icon.src = bundleInfo[id].icon;
+        icon.alt = bundleInfo[id].name;
+        icon.title = bundleInfo[id].name;
+        column.appendChild(icon);
+    });
+}
 
 function handleSlotClick(index) {
     if (build.items[index] === null) {
@@ -418,12 +443,10 @@ function calculateStats() {
                 totals[effect.stat] += effect.amount * rarityCount;
                 break;
             }
-            case "doubleIfEqual": {
-                // Giant's Armor: if max health equals base armor, double both
-                if (totals.health === base.armor) {
-                    totals.armor += base.armor;
-                    totals.health *= 2;
-                }
+            case "perTier": {
+                // Lushwood Wand: counts equipped Golden and Diamond items
+                const tierCount = build.items.filter(slot => slot !== null && slot.tier > 0).length;
+                totals[effect.stat] += effect.amount * tierCount;
                 break;
             }
             case "perEmptySlot": {
@@ -454,8 +477,8 @@ function calculateStats() {
             case "doubleOwnBonus": {
                 if (conditionMet(effect.when, totals, base)) {
                     totals[effect.stat] += piece[effect.field];
-                    break;
                 }
+                break;
             }
         }
     });
@@ -475,6 +498,22 @@ function calculateStats() {
                 totals[effect.stat] = source[effect.from];
                 break;
             }
+        }
+    });
+
+    /* Calculation Pass #4: Battle Start effects that look at the finished stats */
+    pieces.forEach(piece => {
+        if (!piece.dynamicEffect) {
+            return;
+        }
+        switch (piece.dynamicEffect.type) {
+            case "doubleIfEqual":
+                // Giant's Armor: if max health and armor are equal, double both
+                if (totals.health === totals.armor) {
+                    totals.health *= 2;
+                    totals.armor *= 2;
+                }
+                break;
         }
     });
 
@@ -565,20 +604,39 @@ function getBundleFilters() {
 function attachTooltip(element, item) {
     const tooltip = document.getElementById("tooltip");
 
-    element.addEventListener("mouseenter", () => {
+    element.addEventListener("mouseenter", (event) => {
         tooltip.style.display = "block";
         tooltip.innerHTML = "";
         tooltip.appendChild(buildTooltipContent(item));
+        positionTooltip(tooltip, event);
     });
 
     element.addEventListener("mouseleave", () => {
         tooltip.style.display = "none";
     });
 
-    element.addEventListener("mousemove", (event) => {
-        tooltip.style.left = event.pageX + 10 + "px";
-        tooltip.style.top = event.pageY + 10 + "px";
-    });
+    element.addEventListener("mousemove", (event) => positionTooltip(tooltip, event));
+}
+
+// Puts the tooltip just below and right of the mouse. If it would run off the
+// bottom or right edge of the window, it goes above or left of the mouse instead,
+// and it never starts above or left of the window's edge.
+function positionTooltip(tooltip, event) {
+    const gap = 10;
+    const width = tooltip.offsetWidth;
+    const height = tooltip.offsetHeight;
+
+    let left = event.clientX + gap;
+    if (left + width > window.innerWidth) {
+        left = event.clientX - gap - width;
+    }
+    let top = event.clientY + gap;
+    if (top + height > window.innerHeight) {
+        top = event.clientY - gap - height;
+    }
+
+    tooltip.style.left = Math.max(0, left) + window.scrollX + "px";
+    tooltip.style.top = Math.max(0, top) + window.scrollY + "px";
 }
 
 function renderItemGrid() {
@@ -903,10 +961,92 @@ function handleDeleteClick() {
     showSaveStatus('Deleted "' + name + '"');
 }
 
-// A share link stores the whole build in the part of the URL after "#".
+// ---------- Share links ----------
+// A share link stores the whole build in the part of the URL after "#", like
+//   #b=k3x9-2.p0aa.7.m2qz.81fk-1..zz04
+// The parts, split by ".", are: weapon, edge, oils, then the item slots in order.
+//  - Each weapon, edge and item is a 4-character code made from its id (shortCode).
+//    If two pieces of the same kind ever get the same code, the full id is
+//    written instead, with a "_" in front ("_oak_heart").
+//  - "-N" after the weapon is its stack count; after an item it is the tier
+//    (1 = Golden, 2 = Diamond).
+//  - Oils are one digit: attack = 1, armor = 2, speed = 4, added together (7 = all three).
+//  - An empty part is an empty slot (or no edge). Empty slots at the end are left out.
+// Old links in the "#build=..." format still load.
+
+const SHORT_CODE_LENGTH = 4;
+
+// FNV-1a hash of the id, written in base 36 (digits and lowercase letters).
+function shortCode(id) {
+    let hash = 0x811c9dc5;
+    for (let i = 0; i < id.length; i++) {
+        hash ^= id.charCodeAt(i);
+        hash = Math.imul(hash, 0x01000193) >>> 0;
+    }
+    return hash.toString(36).padStart(7, "0").slice(-SHORT_CODE_LENGTH);
+}
+
+function encodePiece(id, list) {
+    const code = shortCode(id);
+    const sharing = list.filter(candidate => shortCode(candidate.id) === code).length;
+    return sharing === 1 ? code : "_" + id;
+}
+
+function decodePiece(token, list) {
+    if (token === "") {
+        return null;
+    }
+    if (token.startsWith("_")) {
+        return token.slice(1);
+    }
+    const found = list.find(candidate => shortCode(candidate.id) === token);
+    return found ? found.id : null;
+}
+
+function encodeShareCode() {
+    const data = serializeBuild();
+
+    let weapon = data.weapon ? encodePiece(data.weapon, allWeapons) : "";
+    if (data.weaponStacks > 1) {
+        weapon += "-" + data.weaponStacks;
+    }
+    const edge = data.edge ? encodePiece(data.edge, allEdges) : "";
+    const oils = (data.oils.attack ? 1 : 0) + (data.oils.armor ? 2 : 0) + (data.oils.speed ? 4 : 0);
+
+    const items = data.items.map(entry => {
+        if (!entry) {
+            return "";
+        }
+        return encodePiece(entry.id, allItems) + (entry.tier > 0 ? "-" + entry.tier : "");
+    });
+    while (items.length > 0 && items[items.length - 1] === "") {
+        items.pop();
+    }
+
+    return [weapon, edge, String(oils), ...items].join(".");
+}
+
+// Turns the code back into the same shape serializeBuild() makes, for applyBuild().
+function decodeShareCode(code) {
+    const [weaponPart = "", edgePart = "", oilPart = "7", ...itemParts] = code.split(".");
+    const [weaponToken, stacks] = weaponPart.split("-");
+    const oils = Number(oilPart);
+
+    return {
+        weapon: decodePiece(weaponToken, allWeapons),
+        weaponStacks: Number(stacks) || 1,
+        edge: decodePiece(edgePart, allEdges),
+        oils: { attack: (oils & 1) !== 0, armor: (oils & 2) !== 0, speed: (oils & 4) !== 0 },
+        items: itemParts.map(part => {
+            const [token, tier] = part.split("-");
+            const id = decodePiece(token, allItems);
+            return id ? { id: id, tier: Number(tier) || 0 } : null;
+        })
+    };
+}
+
 function buildShareLink() {
-    const encoded = btoa(JSON.stringify(serializeBuild()));
-    return location.origin + location.pathname + "#build=" + encodeURIComponent(encoded);
+    return location.origin + location.pathname + "#b=" + encodeShareCode();
 }
 
 function handleShareClick() {
@@ -954,13 +1094,15 @@ function loadAutosave() {
 }
 
 function loadBuildFromHash() {
-    const match = location.hash.match(/^#build=(.+)$/);
-    if (!match) {
-        return;
-    }
+    const shortMatch = location.hash.match(/^#b=(.*)$/);
+    const oldMatch = location.hash.match(/^#build=(.+)$/);
 
     try {
-        applyBuild(JSON.parse(atob(decodeURIComponent(match[1]))));
+        if (shortMatch) {
+            applyBuild(decodeShareCode(decodeURIComponent(shortMatch[1])));
+        } else if (oldMatch) {
+            applyBuild(JSON.parse(atob(decodeURIComponent(oldMatch[1]))));
+        }
     } catch (error) {
         showSaveStatus("Couldn't read that build link");
     }
@@ -1054,12 +1196,16 @@ function setBetaBranch(on) {
 document.getElementById("beta-branch").addEventListener("click", () => setBetaBranch(!betaBranch));
 
 // "Unused Items" hides content that isn't obtainable in the normal game: anything
-// whose bundle code is 0 or 99. (Bundles 1-9 are real, 50 is cauldron, 60 is Honeycomb and 80
-// is event/mythic/cursed.) Cauldron items and item sets are never hidden by this.
+// marked "unused": true in the data, plus anything whose bundle code is 0 or 99.
+// (Bundles 1-9 are real, 50 is cauldron, 60 is Honeycomb and 80 is event/mythic/cursed.)
+// Cauldron items and item sets are only hidden when they carry the "unused" flag.
 const UNUSED_KEY = "hic-hide-unused";
 let hideUnused = false;
 
 function isUnused(item) {
+    if (item.unused) {
+        return true;
+    }
     const isCauldron = item.rarity === "cauldron" || item.rarity === "cauldron_gold";
     if (isCauldron || item.rarity === "set") {
         return false;
@@ -1112,7 +1258,7 @@ Promise.all([
     loadItems(edgeData, data => { allEdges = data; }),
     loadItems(setData, data => { allSets = data; })
 ]).then(() => {
-    if (location.hash.startsWith("#build=")) {
+    if (/^#(b|build)=/.test(location.hash)) {
         // A shared link wins over the autosave. Don't overwrite your own
         // autosave with it until you actually click something.
         autosavePaused = true;

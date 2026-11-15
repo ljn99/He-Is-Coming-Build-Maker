@@ -1,9 +1,39 @@
-Update unused items, including egg and its recipes
-Correct wooden flute sprite
-Correct tambourine sprite
-Remove gravebloom pendant
-Remove nightmare essence
-Correct warhorn sprite
-Rm painsplit pendant
-shorten share links
-Add display for current build's bundles
+TO DO: 
+
+- Add Spectral Arrow and Blade to the unused list
+- Some elixirs are not in the same bundle as their potion counterparts. They need to be.
+- Update the README with only the features that are missing. Make no other changes to it.
+- Correct wooden flute sprite
+- Correct tambourine sprite
+- Correct warhorn sprite
+
+#DONE
+
+- Update unused items list, including egg and its recipes. Full list:
+    Frying pan
+    Baked egg
+    Eggnog
+    Explosive Egg
+    Fish Egg
+    Melon Egg
+    Pickled Egg
+    Rotten Egg
+    Spiky Egg
+    Stone Egg
+    Creme Brulee
+    Elderwood Effigy
+    Cursed Ring
+    Fairy Wand
+    Heatstroke Trident
+    Gravebloom Pendant
+    Steel-Plated Leaf
+    Spectral Armor, Gauntlet, and Mask
+    Thousand Needles
+    Heatstroke Scepter
+
+- Remove nightmare essence
+- Clicking the "Copy link" button creates a long link for sharing the build with others. I'd like to make it much shorter if possible.
+- Display the current build's bundle icons in a vertical column, centered vertically, to the left of the items in the build.
+- Giant's Armor is not calculating correctly. Both health and armor values need to be the same after calculation.
+- Implement Lushwood wand dynamic effect
+- Fix tooltips getting cut off when hovering over items near the bottom of the screen
