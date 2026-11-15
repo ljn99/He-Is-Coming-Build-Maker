@@ -1,8 +1,5 @@
 TO DO: 
 
-- Add Spectral Arrow and Blade to the unused list
-- Some elixirs are not in the same bundle as their potion counterparts. They need to be.
-- Update the README with only the features that are missing. Make no other changes to it.
 - Correct wooden flute sprite
 - Correct tambourine sprite
 - Correct warhorn sprite
@@ -37,3 +34,5 @@ TO DO:
 - Giant's Armor is not calculating correctly. Both health and armor values need to be the same after calculation.
 - Implement Lushwood wand dynamic effect
 - Fix tooltips getting cut off when hovering over items near the bottom of the screen
+- Add Spectral Arrow and Blade to the unused list
+- Fixed some elixirs not being in the same bundle as their potion counterparts
